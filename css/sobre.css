@@ -1,0 +1,25 @@
+main{
+    font-family: 'Rubik';
+    text-align: center;
+    background-color: #FFF6FF;
+}
+
+main h1{
+    color: #FF66C4;
+    font-size: 50px;
+}
+main h2{
+    font-size: 16.4px;
+}
+.container{
+    display: flex; /* Usando flexbox para o layout */
+    justify-content: space-between; /* Distribui as divs igualmente na largura da section */
+    text-align: center;
+}
+
+.content {
+    font-size: 12.5px;
+    padding: 10px;
+    margin: 5px;
+    
+}
