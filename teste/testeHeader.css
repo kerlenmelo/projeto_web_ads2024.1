@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* TESTE HEADER */
+
+header > nav {
+    position: relative; /* Para que a posição absoluta funcione corretamente */
+}
+
+.image-container {
+    position: relative;
+    width: 130px; /* Define a largura da imagem */
+    height: 130px; /* Define a altura da imagem */
+}
+
+.image {
+    width: 100%; /* Para ocupar todo o espaço da div */
+    height: 100%; /* Para ocupar todo o espaço da div */
+}
+
+.link-overlay {
+    position: absolute; /* Posicionamento absoluto em relação à imagem */
+    top: 50%; /* Cobrir toda a imagem */
+    left: 50%; /* Cobrir toda a imagem */
+    transform: translate(-50%, -50%);
+    width: 80px; /* Cobrir toda a imagem */
+    height: 80px; /* Cobrir toda a imagem */
+    background-color: transparent; /* Torna o fundo transparente */
+}

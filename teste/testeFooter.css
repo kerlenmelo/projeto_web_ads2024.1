@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* TESTE FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between; /* Divide o espaço disponível entre os elementos */
+    align-items: center; /* Centraliza verticalmente os elementos */
+    padding: 20px;
+    background-color: #ffaddc;
+    
+    border: 3px solid #ff66c4;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 73px;
+}   
+
+.left {
+    color: #0cc0df;
+}
+
+.right {
+    margin: 0px 40px;
+}
+
+.right ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 0;
+    margin: 0;
+}
+
+.right ul li {
+    display: inline; /* Exibe os itens da lista em linha */
+    margin-right: 10px; /* Espaçamento entre os itens da lista */
+    font-size: 16px;
+}
+
+.right ul li a {
+    color: #0cc0df;
+}
+
+.space-holder {
+    height: 100px; /* Altura igual à altura do footer */
+}

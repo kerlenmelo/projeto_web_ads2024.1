@@ -22,6 +22,8 @@ header nav{
     text-decoration: none;
     border-radius: 12px;
     padding: 3px 3px;
+    text-decoration: none;
+    padding: 3px 3px;
 }
 
 .navEsquerda ul li {
@@ -33,6 +35,21 @@ header nav{
     display: flex;
     padding: 0; 
     list-style: none; 
+}
+
+.logomarca img {
+    width: 150px;
+    height: 150px;
+}
+
+.logomarca a {
+    padding: 0;
+    margin: 0;
+}
+
+.logomarca {
+   margin-top: -20px;
+   padding: 5px 10px;
 }
 
 .navDireita ul li {
