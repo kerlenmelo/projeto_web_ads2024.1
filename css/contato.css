@@ -1,0 +1,29 @@
+
+*{
+    font-family: 'Rubik';
+    background-color: #FFF6FF;
+}
+main div h1 {
+    font-size: 58px;
+    color: #FF66C4;
+    text-align: center;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+div nav {
+    display: inline-block;
+    margin: 55px;
+}
+
+div nav h2 {
+    color: #FF66C4;
+    font-size: 32px;
+    text-align: center;
+}
+
+a img {
+    width: 172.6px;
+    height: 172.6px;
+}
