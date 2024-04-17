@@ -18,6 +18,8 @@ header nav{
     color: #ff66c4;
     font-size: 14px;
     border-radius: 12px;
+    text-decoration: none;
+    padding: 3px 3px;
 }
 
 .navEsquerda ul li {
@@ -42,8 +44,8 @@ header nav{
 }
 
 .logomarca {
-   margin-top: -20px;
-   padding: 5px 10px;
+   background-color: black;
+   padding: 0px 10px;
 }
 
 .navDireita ul li {
