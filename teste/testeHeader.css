@@ -1,4 +1,4 @@
-* {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -6,27 +6,37 @@
 
 /* TESTE HEADER */
 
-header > nav {
-    position: relative; /* Para que a posição absoluta funcione corretamente */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px 5px 20px; /* padding top reduzido para 10px */
+}
+
+.left-image-decoration,
+.right-image-decoration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .image-container {
-    position: relative;
-    width: 130px; /* Define a largura da imagem */
-    height: 130px; /* Define a altura da imagem */
+    display: flex;
+    align-items: center;
 }
 
 .image {
-    width: 100%; /* Para ocupar todo o espaço da div */
-    height: 100%; /* Para ocupar todo o espaço da div */
+    width: 130px;
+    height: 130px;
 }
 
 .link-overlay {
-    position: absolute; /* Posicionamento absoluto em relação à imagem */
-    top: 50%; /* Cobrir toda a imagem */
-    left: 50%; /* Cobrir toda a imagem */
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    width: 80px; /* Cobrir toda a imagem */
-    height: 80px; /* Cobrir toda a imagem */
-    background-color: transparent; /* Torna o fundo transparente */
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
 }
