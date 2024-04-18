@@ -5,3 +5,26 @@
 }
 
 /* MAIN */
+.containerColection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: url(/img/confetesaofundo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    width: 1070px;
+    height: 150px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.containerColection h1 {
+    color: #ff66c4;
+    font-family: "Rubik", sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
