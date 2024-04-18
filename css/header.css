@@ -5,6 +5,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding: 0px 20px 5px 20px;
+
+    background-color: #fff6ff;
 }
 
 .left-image-decoration,
@@ -43,5 +45,5 @@ header {
     color: #ff14a4;
     background-color: #ffaddc;
     border-radius: 20px;
-    padding: 5px;
+    padding: 5px 8px;
 }
