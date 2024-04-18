@@ -44,6 +44,12 @@ header {
     text-decoration: none;
     color: #ff14a4;
     background-color: #ffaddc;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
     border-radius: 20px;
     padding: 5px 8px;
+}
+.left-menu-link.active {
+    font-weight: bold;
 }
