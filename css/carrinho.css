@@ -21,11 +21,18 @@ main h1{
     display: flex;
     flex-direction: row;
     flex-wrap: row;
+    justify-content: center;
     font-family: 'Rubik';
     text-align: center;
     
 }
 
+.descricao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 section {
     flex: 1;
@@ -33,7 +40,7 @@ section {
     box-sizing: border-box;
 }
 .imagem-item img{
-    weight:150px ;
+    width:150px ;
     height:140px ;
     
 }
@@ -42,7 +49,7 @@ section {
 }
 .item-carrinho{
     border-radius: 30px; 
-    weight:450px;
+    width:450px;
     height:154px ;
     display: flex;
     align-items: center;
@@ -141,6 +148,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     width:400px;
     height: 150px ;
     border-radius: 45px;
@@ -234,3 +242,4 @@ select {
 option{
     color: white;
 }
+
