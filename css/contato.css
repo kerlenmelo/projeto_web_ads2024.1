@@ -1,7 +1,7 @@
-
 *{
-    font-family: 'Rubik';
-    background-color: #FFF6FF;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 main div h1 {
     font-size: 58px;
@@ -26,56 +26,4 @@ div nav h2 {
 a img {
     width: 182.6px;
     height: 182.6px;
-}
-
-/* HEADER */
-
-header nav{
-    display: flex;
-    height: 100%;
-    width: 100%;
-}
-
-.headerButton {
-    background-color: #ffaddc;
-    color: #ff66c4;
-    font-size: 14px;
-    border-radius: 12px;
-}
-
-.navEsquerda ul li {
-    display: inline-block;
-    margin-left: 100px;
-}
-
-.navEsquerda ul {
-    display: flex;
-    padding: 0; 
-    list-style: none; 
-}
-
-.logomarca img {
-    width: 150px;
-    height: 150px;
-}
-
-.logomarca a {
-    padding: 0;
-    margin: 0;
-}
-
-.logomarca {
-   margin-top: -20px;
-   padding: 5px 10px;
-}
-
-.navDireita ul li {
-    display: inline-block;
-    margin-left: 100px;
-}
-
-.navDireita ul {
-    display: flex;
-    padding: 0; 
-    list-style: none; 
 }
