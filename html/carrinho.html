@@ -1,14 +1,17 @@
-
-
 //
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho</title>
     <link rel="stylesheet" href="/css/carrinho.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
 </head>
+
 <body>
     <header>
         <nav>
@@ -19,9 +22,8 @@
                 <li><a href="#">Sobre</a></li>
             </ul>
             <a href="home.html">
-                <img src="/img/BeCandyLogo.png" 
-                    alt="Logo da loja Be Candy. Um bombom rosa com branco com since 2024 escrito em cima e Be Candy escrito na parte de baixo"
-                >
+                <img src="/img/BeCandyLogo.png"
+                    alt="Logo da loja Be Candy. Um bombom rosa com branco com since 2024 escrito em cima e Be Candy escrito na parte de baixo">
             </a>
             <img src="/img/detalhechocolate.png" alt="calda de chocolate escorrendo">
             <ul>
@@ -32,67 +34,99 @@
         </nav>
     </header>
     <main>
-        <h1>CARRINHO</h1>
-        <section>
-            <h2>DESCRIÇÃO COMPRA </h2>
-            <div>
-                <img src="/img/ovodebrownie.png" alt="Ovo de páscoa sabor brownie">
-                <h3>Ovo de Páscoa sabor Brownie</h3>
-                <p> Peso: 200g</p>
-                <p>Quantidade: 01</p>
-                <p>R$ 27,99</p>                            
-            </div>
-            <div>
-                <img src="/img/ovodekitkat.png" alt="Ovo de páscoa sabor KitKat">
-                <h3>Ovo de Páscoa sabor KitKat</h3>
-                <p> Peso: 200g</p>
-                <p>Quantidade: 01</p>
-                <p>R$ 27,99</p>   
-            </div>
-            <div>
-                <img src="/img/Ovo-de-Páscoa-de-Colher-Oreos.jpg" alt="Ovo de páscoa sabor Oreo">
-                <h3>Ovo de Páscoa sabor Oreo</h3>
-                <p> Peso: 200g</p>
-                <p>Quantidade: 01</p>
-                <p>R$ 27,99</p>   
-            </div>
-        </section>
-        <section>
-            <h2>INFORMAÇÕES DE ENTREGA </h2>
-            <div>
-                <h3>DADOS PESSOAIS </h3>
-                <p> Nome: Fulano de Tal</p>
-                <p>CPF: 111.222.333-44</p>
-                <p>E-mail: fulano@detal.com</p>
-                <p>Telefone: (87) 9.9999-8888</p>  
-            </div>
-            <div>
-                <h3>ENDEREÇO</h3>
-                <p>Rua: Fim da Cidade </p>
-                <p>Número: 657 </p>
-                <p>Bairro: Centro </p>
-                <p>Complemento: Próxima a escola primária </p>  
-            </div>
-        </section>
-        <section>
-            <h2>CUPOMS E VALE-COMPRAS </h2>
-            <p>INSIRA SEU CUPOM OU VALE-PRESENTES </p>
-            <input type="Text">
-        </section>
-        <section>
-            <h2> PAGAMENTO</h2>
-            <div>
-                <p>TAXA DE ENTREGA: </p>
-                <p>+ R$ 10,00</p>
-                <p>CUPOM: </p>
-                <p>- R$ 15,00</p>
-                <p>SUBTOTAL:  </p>
-                <p>= R$ 83,97</p>
-                <p>TOTAL: </p>  
-                <p>R$ 68,97</p>               
-            </div>
-        </section>
-        <button name="Concluir" type="Text">
+        <h1 class="title">CARRINHO</h1>
+        <div class="container-main">
+            <section>
+                <h2 class="title">DESCRIÇÃO COMPRA </h2>
+                <div class="item-carrinho">
+                    <div class="imagem-item">
+                        <img src="/img/ovo_brownie.jpeg" alt="Ovo de páscoa sabor brownie">
+                    </div>
+
+                    <div class="descricao-item">
+                        <h3>Ovo de Páscoa sabor Brownie <br> </h3>
+                        <p> Peso: 200g <br></p>
+                        <p>Quantidade: 01 <br> </p>
+                        <p>R$ 27,99</p>
+                    </div>
+                </div>
+                <div class="item-carrinho">
+                    <div class="imagem-item">
+                        <img src="/img/ovo_kitkat.png" alt="Ovo de páscoa sabor KitKat">
+                    </div>
+
+                    <div class="descricao-item">
+                        <h3>Ovo de Páscoa sabor KitKat</h3>
+                        <p> Peso: 200g <br></p>
+                        <p>Quantidade: 01</p>
+                        <p>R$ 27,99</p>
+                    </div>
+                </div>
+
+                <div class="item-carrinho">
+                    <div class="imagem-item">
+                        <img src="/img/ovo_oreo.jpg" alt="Ovo de páscoa sabor Oreo">
+
+                    </div>
+                    <div class="descricao-item">
+                        <h3>Ovo de Páscoa sabor Oreo</h3>
+                        <p> Peso: 200g</p>
+                        <p>Quantidade: 01</p>
+                        <p>R$ 27,99</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2 class="title">INFORMAÇÕES DE ENTREGA </h2>
+                <div class="col-container">
+                    <div class="item-entrega">
+                        <h3>DADOS PESSOAIS </h3>
+                        <p> Nome: Fulano de Tal</p>
+                        <p>CPF: 111.222.333-44</p>
+                        <p>E-mail: fulano@detal.com</p>
+                        <p>Telefone: (87) 9.9999-8888</p>
+                    </div>
+                    <div class="item-entrega">
+                        <h3>ENDEREÇO</h3>
+                        <p>Rua: Fim da Cidade </p>
+                        <p>Número: 657 </p>
+                        <p>Bairro: Centro </p>
+                        <p>Complemento: Próxima a escola primária </p>
+                    </div>
+                    <h2 class="title">CUPOMS E VALE-COMPRAS </h2>
+                    <div class="item-cupom">   
+                        <p>INSIRA SEU CUPOM OU VALE-PRESENTES </p>
+                        <input type="Text">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2 class='title'> PAGAMENTO</h2>
+                <label for="forma-pagamento">Forma de pagamento: </label>
+                <select name="forma-pagamento">
+                    <option value="1">Cartão de Crédito </option>
+                    <option value="2">Cartão de Débito</option>
+                    <option value="3">Pix</option>
+                    <option value="4">Boleto</option>
+                </select>
+                <div>
+                    <div class="item-pagamento">
+                        <h3>TAXA DE ENTREGA: </h3>
+                        <p>+ R$ 10,00</p>
+                        <h3>CUPOM: </h3>
+                        <p>- R$ 15,00</p>
+                        <h3>SUBTOTAL: </h3>
+                        <p>= R$ 83,97</p>
+                    </div>
+                    <div class="item-pagamento">
+                        <h3>TOTAL: </h3>
+                        <p>R$ 68,97</p>
+                    </div>
+                </div>
+                <button name="Concluir" type="Text" class="botao"> CONCLUIR </button>
+            </section>
+            
+        </div>
     </main>
     <footer>
         <div>
@@ -107,4 +141,5 @@
         </nav>
     </footer>
 </body>
+
 </html>

@@ -1,0 +1,160 @@
+
+.title{
+    color: #FF66C4;
+    font-family: 'Rubik';
+}
+
+main{
+    background-color: #FFF6FF;
+}
+main h1{
+    text-align: center;
+    font-size: 58px;
+}
+.container-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: row;
+    font-family: 'Rubik';
+    text-align: center;
+    
+}
+
+
+section {
+    flex: 1;
+    margin-right: 20px; 
+    box-sizing: border-box;
+}
+.imagem-item img{
+    weight:150px ;
+    height:140px ;
+    
+}
+.imagem-item{
+    margin-left: 10px;
+}
+.item-carrinho{
+    border-radius: 3%; 
+    weight:450px;
+    height:154px ;
+    display: flex;
+    align-items: center;
+    color: #0CC0DF;
+    padding: auto;
+    border: 1px solid black;
+    margin: 0px 0px 10px 0px;  
+}
+
+
+.descricao-item{
+    margin-left: 10px;
+    text-align: left;
+    font-weight: bold;
+    line-height: 0.7;
+}
+
+.item-entrega{
+    border-radius: 3%; 
+    weight:369px;
+    height:167.8px ;
+    color: #0CC0DF;
+    border: 1px solid black;
+    margin: 0px 10px 10px 10px;
+    text-align: left; 
+    font-weight: bold;
+    line-height: 0.7; 
+}
+
+.item-entrega p{
+    margin-left: 15px;
+}
+
+.item-entrega h3 {
+    margin-left: 15px;
+}
+
+
+
+.col-container{
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+
+.item-cupom{
+    border-radius: 3%; 
+    weight:336.3px;
+    height:99.5px ;
+    align-items: center;
+    color: #0CC0DF;
+    padding: auto;
+    border: 1px solid black;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.item-pagamento{
+    border-radius: 3%;
+    text-align: left;
+    border: 1px solid black;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    
+}
+
+.item-pagamento h3{
+    margin-right: 15px;
+    margin-left: 15px;
+    color: #0CC0DF;
+}
+
+.item-pagamento p{
+    margin-right: 15px;
+    margin-left: 15px;
+    
+    color: #9FB4AC;
+    font-weight: bold;
+}
+
+.botao{
+    border-radius: 18%;
+    color: #FFF6FF;
+    border-color: #0CC0DF;
+    background-color: #FF66C4;
+    width: 220px;
+    height: 50px;
+    padding: 10px 10px;
+    font-size: 18px;
+    font-family: 'Rubik';
+    font-weight: bold;
+    cursor: pointer;
+}
+
+label {
+    font-size: 18px;
+    font-family: 'Rubik';
+    font-weight: bold;
+    color: #0CC0DF;
+    text-transform: uppercase;
+}
+
+select {
+    text-align: center;
+    border-color: #0CC0DF;
+    background-color: #FF66C4;
+    width: 220px;
+    height: 30px;
+    font-size: 18px;
+    font-family: 'Rubik';
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+option{
+    color: white;
+}
