@@ -5,13 +5,24 @@
 }
 
 /* MAIN */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    background-color: #fff6ff;
+}
+
 .containerColection {
     display: flex;
     justify-content: center;
     align-items: center;
     
     background-image: url(/img/confetesaofundo.png);
-    background-size: cover;
+    background-size: 1070px;
     background-position: center;
     background-repeat: no-repeat;
     
@@ -27,4 +38,88 @@
     font-size: 55px;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    width: 1070px;
+}
+
+.mainContainer > aside > p {
+    color: #0cc0df;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+    text-transform: uppercase;
+}
+
+.mainContainer button {
+    background-color: #ff66c4;
+
+    width: 192px;
+    height: 40px;
+
+    border: 2px solid #0cc0df;
+    border-radius: 92px;
+
+    color: #fff;
+    font-size: 14px;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.imageOvoPascoa {
+    width: 182px;
+    height: 182px;
+    margin: 8px;
+}
+
+.imagesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin: 30px 30px 40px 20px;
+    width: 200px;
+    height: 350px;
+
+    border: 2px solid black;
+}
+
+.imagesContainer h1 {
+    color: black;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+
+    margin-top: 20px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
+
+.imagesContainer p {
+    color: #0cc0df;
+    font-size: 14px;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+
+    margin-left: 8px;
+}
+
+/* FOOTER */
+
+footer {
+    position: fixed;
+    bottom: 0;
 }
