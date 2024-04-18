@@ -53,3 +53,8 @@ header {
 .left-menu-link.active {
     font-weight: bold;
 }
+
+.left-menu-link a:hover, .right-menu-link a:hover {
+    color: white;
+    background-color: #ff14a4;
+}
