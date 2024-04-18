@@ -76,6 +76,22 @@ main {
 aside {
     display: flex;
     flex-direction: column;
+}
+
+aside > p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 40px;
+}
+
+.asideButton {
+    cursor: pointer;
+}
+
+.asideButton:hover {
+    background-color: #0cc0df;
+    color: black;
+    border: 2px solid #ff66c4;
 
 }
 
@@ -92,7 +108,7 @@ aside {
 
     margin: 30px 30px 40px 20px;
     width: 200px;
-    height: 350px;
+    height: 310px;
 
     border: 2px solid black;
 }
@@ -115,11 +131,4 @@ aside {
     font-weight: bold;
 
     margin-left: 8px;
-}
-
-/* FOOTER */
-
-footer {
-    position: fixed;
-    bottom: 0;
 }
