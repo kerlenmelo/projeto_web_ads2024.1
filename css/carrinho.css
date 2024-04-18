@@ -1,5 +1,9 @@
 
-
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 .title{
     color: #FF66C4;
@@ -53,19 +57,24 @@ section {
     margin-left: 10px;
     text-align: left;
     font-weight: bold;
-    line-height: 0.7;
+    line-height: 1.6;
+    font-size: 19px;
 }
 
 .item-entrega{
     border-radius: 45px; 
-    weight:369px;
-    height:167.8px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:750px;
+    height:200px ;
     color: #0CC0DF;
     border: 1px solid black;
     margin: 0px 10px 10px 10px;
     text-align: left; 
     font-weight: bold;
-    line-height: 0.7; 
+    line-height: 1.6; 
+    font-size: 19px;
 }
 
 .item-entrega p{
@@ -81,13 +90,20 @@ section {
 .col-container{
     border-left: 3px solid black;
     border-right: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .item-cupom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 45px; 
-    weight:336.3px;
-    height:99.5px ;
+    width:750px;
+    height:95px ;
     align-items: center;
     color: #0CC0DF;
     padding: auto;
@@ -96,19 +112,76 @@ section {
     margin-left: 15px;
     margin-bottom: 35px;
     font-weight: bold;
+    font-size: 25px;
 }
 
+.item-cupom input{
+    align-self: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    width:350px;
+    height:30px;
+}
+
+.pagamento{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;  
+    padding-left: -40px;
+    padding-right: -40px;
+}
+
+.section-pagamento{
+    padding-left: -40px;
+    padding-right: -40px;
+
+}
 .item-pagamento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:400px;
+    height: 150px ;
     border-radius: 45px;
+    text-align: left;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    font-size: 19px;
+}
+
+.item-pagamento-total{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:400px;
+    height: 100px ;
+    border-radius: 40px;
     text-align: left;
     border: 1px solid black;
     margin-right: 15px;
     margin-left: 15px;
     margin-top: 10px;
     margin-bottom: 25px;
+    padding-left: 15px;
     
 }
 
+.item-pagamento-total h3{
+    margin-right: 15px;
+    margin-left: 15px;
+    color: #0CC0DF;
+}
+
+.item-pagamento-total p{
+    margin-right: 15px;
+    margin-left: 15px;
+    
+    color: #9FB4AC;
+    font-weight: bold;
+}
 .item-pagamento h3{
     margin-right: 15px;
     margin-left: 15px;
@@ -130,7 +203,7 @@ section {
     background-color: #FF66C4;
     width: 220px;
     height: 50px;
-    padding: 10px 10px;
+    padding: 15px 15px;
     font-size: 18px;
     font-family: 'Rubik';
     font-weight: bold;
