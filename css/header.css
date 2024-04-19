@@ -50,7 +50,7 @@ header {
     border-radius: 20px;
     padding: 5px 8px;
 }
-.left-menu-link.active {
+.left-menu-link.active, .right-menu-link.active {
     font-weight: bold;
 }
 
