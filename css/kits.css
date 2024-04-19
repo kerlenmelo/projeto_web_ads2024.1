@@ -3,3 +3,127 @@
     margin: 0;
     padding: 0;
 }
+
+/* MAIN */
+
+main > h1 {
+    color: #ff66c4;
+    font-family: "Rubik", sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+}
+
+main section{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-kit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 400px;
+    height: 450px;
+
+    border: 1px solid #ff14a4;
+    border-radius: 60px;
+
+    margin: 5px 20px 20px 10px;
+
+    background-color: #0cc0df;
+}
+
+.image-kits {
+    width: 280px;
+    height: 192px;
+    
+    border-radius: 15px;
+
+    margin: 15px 5px 20px 5px;
+}
+
+.price-kit {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+
+    color: black;
+}
+
+.name-kit {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+
+    color: #ff14a4 ;
+
+    margin-bottom: 15px;
+}
+
+.container-kit > p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+
+    color: black;
+}
+
+.description-kit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: black;
+
+    margin-top: 10px;
+}
+
+.description-kit li {
+    line-height: 1.8;
+}
+
+.container-main button {
+    background-color: #ff66c4;
+
+    width: 192px;
+    height: 40px;
+
+    margin-bottom: 40px;
+
+    border: 2px solid #0cc0df;
+    border-radius: 92px;
+
+    color: #fff;
+    font-size: 14px;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+.container-main button:hover {
+    background-color: #0cc0df;
+    color: black;
+    border: 2px solid #ff66c4;
+}
