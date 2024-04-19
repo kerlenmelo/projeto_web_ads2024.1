@@ -4,28 +4,54 @@
     padding: 0;
 }
 
+/* MAIN */
+
 main{
-    font-family: 'Rubik';
-    text-align: center;
-    background-color: #FFF6FF;
+    background-color: #fff6ff;
 }
 
-main h1{
-    color: #FF66C4;
-    font-size: 50px;
+main > h1{
+    color: #ff66c4;
+    font-family: "Rubik", sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
 }
-main h2{
-    font-size: 16.4px;
-}
+
 .container{
-    display: flex; /* Usando flexbox para o layout */
-    justify-content: space-between; /* Distribui as divs igualmente na largura da section */
+    display: flex;
+    justify-content: center;
     text-align: center;
+
+    margin-top: 30px;
 }
 
-.content {
-    font-size: 12.5px;
-    padding: 10px;
-    margin: 5px;
-    
+.content h2{
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+
+    margin-top: 15px;
+}
+
+.content p{
+    font-size: 12px;
+    font-family: "Rubik", sans-serif;
+    text-transform: uppercase;
+    color: black;
+
+    margin-top: 40px;
+    margin-left: 30px;
+    max-width: 590px;
+    max-height: 260px;
+}
+
+/* FOOTER */
+
+footer {
+    position: fixed;
+    bottom: 0;
 }
