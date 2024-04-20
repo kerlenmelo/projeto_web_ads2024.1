@@ -50,11 +50,11 @@
                     <div class="imagem-item">
                         <img src="/img/ovo_brownie.jpeg" alt="Ovo de páscoa sabor brownie">
                     </div>
-                    <div class="descricao-item">
-                        <h3>Ovo de Páscoa sabor Brownie <br> </h3>
-                        <p> Peso: 200g <br></p>
-                        <p>Quantidade: 01 <br> </p>
-                        <p>R$ 27,99</p>
+                    <div class="informacao-item">
+                        <h3 class="titulo-item">Ovo de Páscoa - Brownie <br> </h3>
+                        <p class="descricao-item"> Peso: 200g <br></p>
+                        <p class="descricao-item">Quantidade: 01 <br> </p>
+                        <p class="preco">R$ 27,99</p>
                     </div>
                 </div>
                 <div class="item-carrinho">
@@ -62,11 +62,23 @@
                         <img src="/img/ovo_kitkat.png" alt="Ovo de páscoa sabor KitKat">
                     </div>
 
-                    <div class="descricao-item">
-                        <h3>Ovo de Páscoa sabor KitKat</h3>
-                        <p> Peso: 200g <br></p>
-                        <p>Quantidade: 01</p>
-                        <p>R$ 27,99</p>
+                    <div class="informacao-item">
+                        <h3 class="titulo-item" >Ovo de Páscoa - KitKat</h3>
+                        <p class="descricao-item"> Peso: 200g <br></p>
+                        <p class="descricao-item">Quantidade: 01</p>
+                        <p class="preco">R$ 27,99</p>
+                    </div>
+                </div>
+                <div class="item-carrinho">
+                    <div class="imagem-item">
+                        <img src="/img/ovo_oreo.jpg" alt="Ovo de páscoa sabor Oreo">
+
+                    </div>
+                    <div class="informacao-item">
+                        <h3 class="titulo-item">Ovo de Páscoa - Oreo</h3>
+                        <p class="descricao-item"> Peso: 200g</p>
+                        <p class="descricao-item">Quantidade: 01</p>
+                        <p class="preco">R$ 27,99</p>
                     </div>
                 </div>
 
@@ -75,59 +87,70 @@
                         <img src="/img/ovo_oreo.jpg" alt="Ovo de páscoa sabor Oreo">
 
                     </div>
-                    <div class="descricao-item">
-                        <h3>Ovo de Páscoa sabor Oreo</h3>
-                        <p> Peso: 200g</p>
-                        <p>Quantidade: 01</p>
-                        <p>R$ 27,99</p>
+                    <div class="informacao-item">
+                        <h3 class="titulo-item">Ovo de Páscoa - Oreo</h3>
+                        <p class="descricao-item"> Peso: 400g</p>
+                        <p class="descricao-item">Quantidade: 01</p>
+                        <p class="preco">R$ 47,99</p>
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="entrega">
                 <h2 class="title">INFORMAÇÕES DE ENTREGA </h2>
                 <div class="col-container">
                     <div class="item-entrega">
-                        <h3>DADOS PESSOAIS </h3>
-                        <p> Nome: Fulano de Tal</p>
-                        <p>CPF: 111.222.333-44</p>
-                        <p>E-mail: fulano@detal.com</p>
-                        <p>Telefone: (87) 9.9999-8888</p>
+                        <h3 class="titulo-item-ent">ENDEREÇO</h3>
+                        <p class="descricao-entrega">Rua: </p>
+                        <input class="input-entrega" type="Text">
+                        <p class="descricao-entrega">Número: </p>
+                        <input class="input-entrega" type="Text">
+                        <p class="descricao-entrega">Bairro:  </p>
+                        <input class="input-entrega" type="Text">
+                        <p class="descricao-entrega">Complemento:  </p>
+                        <input class="input-entrega" type="Text">
                     </div>
                     <div class="item-entrega">
-                        <h3>ENDEREÇO</h3>
-                        <p>Rua: Fim da Cidade </p>
-                        <p>Número: 657 </p>
-                        <p>Bairro: Centro </p>
-                        <p>Complemento: Próxima a escola primária </p>
+                        <h3 class="titulo-item-ent">DADOS PESSOAIS </h3>
+                        <p class="descricao-entrega"> Nome:</p>
+                        <input class="input-entrega" type="Text">
+                        <p class="descricao-entrega">CPF:</p>
+                        <input class="input-entrega" type="Text">
+                        <p class="descricao-entrega">E-mail:</p>
+                        <input class="input-entrega" type="Text">
+                        <p class="descricao-entrega">Telefone:</p>
+                        <input class="input-entrega" type="Text">
                     </div>
-                    <h2 class="title">CUPOMS E VALE-COMPRAS </h2>
-                    <div class="item-cupom">   
-                        <p>INSIRA SEU CUPOM OU VALE-PRESENTES </p>
-                        <input type="Text">
-                    </div>
+                    <button name="Enviar" type="Text" class="botao"> CONFIRMAR </button>
                 </div>
             </section>
             <section class="section-pagamento">
+                <h2 class="title">CUPOMS E VALE-COMPRAS </h2>
+                <div class="item-cupom">   
+                    <p>INSIRA SEU CUPOM OU VALE-PRESENTES </p>
+                    <input class='input-entrega'type="Text">
+                </div>
                 <h2 class='title'> PAGAMENTO</h2>
-                <label for="forma-pagamento">Forma de pagamento: </label>
-                <select name="forma-pagamento">
+                <div class='opcoes-pagamento'>
+                <label class="label-pagamento" for="forma-pagamento">Forma de pagamento: </label>
+                <select class='lista-op-pag'name="forma-pagamento">
                     <option value="1">Cartão de Crédito </option>
                     <option value="2">Cartão de Débito</option>
                     <option value="3">Pix</option>
                     <option value="4">Boleto</option>
                 </select>
+                </div>
                 <div class="pagamento">
                     <div class="item-pagamento">
-                        <h3>TAXA DE ENTREGA: </h3>
-                        <p>+ R$ 10,00</p>
-                        <h3>CUPOM: </h3>
-                        <p>- R$ 15,00</p>
-                        <h3>SUBTOTAL: </h3>
-                        <p>= R$ 83,97</p>
+                        <h3 class="titulo-pagamento">TAXA DE ENTREGA: </h3>
+                        <p class="valor-pagamento">+ R$ 10,00</p>
+                        <h3 class="titulo-pagamento">CUPOM: </h3>
+                        <p class="valor-pagamento">- R$ 15,00</p>
+                        <h3 class="titulo-pagamento">SUBTOTAL: </h3>
+                        <p class="valor-pagamento">= R$ 83,97</p>
                     </div>
                     <div class="item-pagamento-total">
-                        <h3>TOTAL: </h3>
-                        <p>R$ 68,97</p>
+                        <h3 class="titulo-total">TOTAL: </h3>
+                        <p class="preco-total">R$ 68,97</p>
                     </div>
                 </div>
                 <button name="Concluir" type="Text" class="botao"> CONCLUIR </button>

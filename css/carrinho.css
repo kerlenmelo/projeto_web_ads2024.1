@@ -5,241 +5,248 @@
     padding: 0;
 }
 
+main {
+    background-color: #fff6ff;
+}
+main h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 55px;
+}
+
+/* DESCRIÇÃO COMPRA   */
+.container-main{
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px; 
+}
+
+.descricao h2{
+    text-align: center;
+}
+.item-carrinho {
+    display: flex;
+    align-items: center;
+    font-family: 'Rubik';
+    background-color: #F1D1E0;
+    width: 432px;
+    height: 160.6px;
+    border-radius: 19px;
+    margin: 20px 20px 10px 20px;
+    padding-top: 4px;
+}
+
 .title{
     color: #FF66C4;
     font-family: 'Rubik';
-}
-
-main{
-    background-color: #FFF6FF;
-}
-main h1{
     text-align: center;
-    font-size: 58px;
-}
-.container-main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: row;
-    justify-content: center;
-    font-family: 'Rubik';
-    text-align: center;
-    
 }
 
-.descricao{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-section {
-    flex: 1;
-    margin-right: 20px; 
-    box-sizing: border-box;
-}
 .imagem-item img{
     width:150px ;
     height:140px ;
+    border-radius: 15px;
+    margin-left: 15px;
     
 }
-.imagem-item{
-    margin-left: 10px;
-}
-.item-carrinho{
-    border-radius: 30px; 
-    width:450px;
-    height:154px ;
-    display: flex;
-    align-items: center;
-    color: #0CC0DF;
-    padding: auto;
-    border: 1px solid black;
-    margin: 0px 0px 10px 0px;  
-}
 
-
-.descricao-item{
-    margin-left: 10px;
-    text-align: left;
-    font-weight: bold;
-    line-height: 1.6;
-    font-size: 19px;
-}
-
-.item-entrega{
-    border-radius: 45px; 
+.informacao-item{
+    margin-left: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width:750px;
-    height:200px ;
-    color: #0CC0DF;
-    border: 1px solid black;
-    margin: 0px 10px 10px 10px;
-    text-align: left; 
-    font-weight: bold;
-    line-height: 1.6; 
+    align-self: flex-start;
+    padding-top: 15px;
+    line-height: 25px;
+}
+
+.titulo-item{
+    color: #000;
     font-size: 19px;
 }
 
-.item-entrega p{
-    margin-left: 15px;
+.preco{
+    font-size: 19px;
+    font-weight: bold;
 }
 
-.item-entrega h3 {
-    margin-left: 15px;
+.descricao-item {
+    color: #0CC0DF;
+    font-family: 'Rubik';
+    font-size: 25;
 }
 
+.descricao-item p{
+    line-height: 1.5;
+}
 
+/* ---------------  */
+
+/* INFORMAÇÃO ENTREGA   */
 
 .col-container{
-    border-left: 3px solid black;
-    border-right: 3px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    height: 720px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+.item-entrega{
+    width: 354.2px;
+    height: 320px;
+    background-color: #F1D1E0;
+    margin: 17px 15px 20px 15px;
+    border-radius: 19px;
+    font-family: 'Rubik';
+    display: flex;
+    flex-direction: column;
+    line-height: 32px;
+    padding-left: 13px;
+    padding-top: 8px;
+}
+.descricao-entrega{
+    color: #0CC0DF;
+    font-size: 22.5px;
+    font-weight: bold;
+}
+.input-entrega{
+    width: 200px;
+    height: 27px;
+    border-radius: 8px;
+    border-color: #F1D1E0;
 }
 
+.titulo-item-ent{
+    color: #000;
+    font-size: 23px;
+}
+
+.botao{
+    background-color: #ff66c4;
+    width: 192px;
+    height: 40px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    border: 2px solid #0cc0df;
+    border-radius: 92px;
+
+    color: #fff;
+    font-size: 14px;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+/* CUPONS E VALE-PRESENTES E PAGAMENTO   */
+
+.section-pagamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Rubik';
+}
 
 .item-cupom{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    border-radius: 45px; 
-    width:750px;
+    border-radius: 19px; 
+    width:340px;
     height:95px ;
     align-items: center;
-    color: #0CC0DF;
-    padding: auto;
-    border: 1px solid black;
+    color: #000;
+    padding-top: 15px;
+    margin-top: 19px;
     margin-right: 15px;
     margin-left: 15px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 14px;
+    background-color: #F1D1E0;
 }
 
-.item-cupom input{
-    align-self: center;
-    border-radius: 10px;
-    margin-top: 10px;
-    width:350px;
-    height:30px;
-}
-
-.pagamento{
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    align-items: center;  
-    padding-left: -40px;
-    padding-right: -40px;
-}
-
-.section-pagamento{
-    padding-left: -40px;
-    padding-right: -40px;
-
-}
 .item-pagamento{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
-    width:400px;
-    height: 150px ;
-    border-radius: 45px;
-    text-align: left;
-    border: 1px solid black;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    padding-left: 10px;
-    font-size: 19px;
+    width: 275px;
+    height: 200.2px;
+    background-color: #F1D1E0;
+    border-radius: 19px;
+    line-height: 30px;
+    padding-left: 15px;
+    padding-top: 5px;
 }
 
 .item-pagamento-total{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width:400px;
-    height: 100px ;
-    border-radius: 40px;
-    text-align: left;
-    border: 1px solid black;
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-top: 10px;
-    margin-bottom: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 275px;
+    height: 94px;
+    background-color: #F1D1E0;
+    border-radius: 19px;
     padding-left: 15px;
-    
+    padding-top: 5px;
+    line-height: 30px;
 }
-
-.item-pagamento-total h3{
-    margin-right: 15px;
-    margin-left: 15px;
+.titulo-pagamento{
     color: #0CC0DF;
+    font-size: 19px;
 }
 
-.item-pagamento-total p{
-    margin-right: 15px;
-    margin-left: 15px;
-    
-    color: #9FB4AC;
-    font-weight: bold;
-}
-.item-pagamento h3{
-    margin-right: 15px;
-    margin-left: 15px;
-    color: #0CC0DF;
-}
-
-.item-pagamento p{
-    margin-right: 15px;
-    margin-left: 15px;
-    
-    color: #9FB4AC;
+.valor-pagamento{
+    color: #000;
+    font-size: 17px;
     font-weight: bold;
 }
 
-.botao{
-    border-radius: 92px;
-    color: #FFF6FF;
-    border-color: #0CC0DF;
-    background-color: #FF66C4;
-    width: 220px;
-    height: 50px;
-    padding: 15px 15px;
-    font-size: 18px;
+.titulo-total{
+    color: #0CC0DF;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.preco-total{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.opcoes-pagamento{
     font-family: 'Rubik';
-    font-weight: bold;
-    cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
 
-label {
-    font-size: 18px;
+.label-pagamento{
     font-family: 'Rubik';
-    font-weight: bold;
-    color: #0CC0DF;
+    font-weight: bolder;
     text-transform: uppercase;
+    color: #FF14A4;
+    margin: 5px 0px 5px 0px;
 }
-
-select {
-    text-align: center;
-    border-color: #0CC0DF;
-    background-color: #FF66C4;
-    width: 220px;
-    height: 30px;
-    font-size: 18px;
+.lista-op-pag{
+    width: 183px;
+    height: 29px;
+    border-radius: 19px;
+    color: black;
     font-family: 'Rubik';
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 92px;
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 5px 5px 15px 5px;
+    background-color: #FF14A4;
 }
-
-option{
-    color: white;
-}
-

@@ -42,12 +42,12 @@ header {
 
 .left-menu-link a, .right-menu-link a{
     text-decoration: none;
-    color: #ff14a4;
+    color: black;
     background-color: #ffaddc;
-    font-size: 14px;
+    font-size: 20px;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 5px 8px;
 }
 .left-menu-link.active, .right-menu-link.active {
