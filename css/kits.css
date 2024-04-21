@@ -4,12 +4,12 @@
     padding: 0;
 }
 
-/* MAIN */
+/* KITS */
 
 main > h1 {
     color: #ff66c4;
     font-family: "Rubik", sans-serif;
-    font-size: 55px;
+    font-size: 3.125vw; /* ajustando tamanho da fonte para vw */
     font-weight: bold;
     text-transform: uppercase;
 
@@ -17,7 +17,7 @@ main > h1 {
     justify-content: center;
 }
 
-main section{
+main section {
     display: flex;
     justify-content: center;
     align-content: space-between;
@@ -34,28 +34,28 @@ main section{
     flex-direction: column;
     align-items: center;
 
-    width: 400px;
-    height: 450px;
+    width: 26.667vw; /* ajustando largura para vw */
+    height: 29.167vw; /* ajustando altura para vw */
 
-    border: 1px solid #ff14a4;
-    border-radius: 60px;
+    border: 0.052vw solid #ff14a4; /* ajustando largura da borda para vw */
+    border-radius: 3.75vw; /* ajustando raio da borda para vw */
 
-    margin: 5px 20px 20px 10px;
+    margin: 1.042vw 2.083vw 2.083vw 1.042vw; /* ajustando margem para vw */
 
     background-color: #0cc0df;
 }
 
 .image-kits {
-    width: 280px;
-    height: 192px;
-    
-    border-radius: 15px;
+    width: 18.333vw; /* ajustando largura para vw */
+    height: 12.5vw; /* ajustando altura para vw */
 
-    margin: 15px 5px 20px 5px;
+    border-radius: 1.042vw; /* ajustando raio da borda para vw */
+
+    margin: 1.042vw 0.416vw 1.562vw 0.416vw; /* ajustando margem para vw */
 }
 
 .price-kit {
-    font-size: 14px;
+    font-size: 0.729vw; /* ajustando tamanho da fonte para vw */
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
 
@@ -64,17 +64,17 @@ main section{
 
 .name-kit {
     font-family: "Rubik", sans-serif;
-    font-size: 16px;
+    font-size: 0.8333vw; /* ajustando tamanho da fonte para vw */
     font-weight: bold;
 
     color: #ff14a4 ;
 
-    margin-bottom: 15px;
+    margin-bottom: 1.042vw; /* ajustando margem inferior para vw */
 }
 
 .container-kit > p {
     font-family: "Montserrat", sans-serif;
-    font-size: 12px;
+    font-size: 0.625vw; /* ajustando tamanho da fonte para vw */
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
@@ -88,13 +88,13 @@ main section{
     align-items: center;
 
     font-family: "Montserrat", sans-serif;
-    font-size: 12px;
+    font-size: 0.625vw; /* ajustando tamanho da fonte para vw */
     text-transform: uppercase;
     text-align: center;
 
     color: black;
 
-    margin-top: 10px;
+    margin-top: 0.521vw; /* ajustando margem superior para vw */
 }
 
 .description-kit li {
@@ -104,16 +104,16 @@ main section{
 .container-main button {
     background-color: #ff66c4;
 
-    width: 192px;
-    height: 40px;
+    width: 10.9375vw; /* ajustando largura para vw */
+    height: 2.5vw; /* ajustando altura para vw */
 
-    margin-bottom: 40px;
+    margin-bottom: 2.083vw; /* ajustando margem inferior para vw */
 
-    border: 2px solid #0cc0df;
-    border-radius: 92px;
+    border: 0.104vw solid #0cc0df; /* ajustando largura da borda para vw */
+    border-radius: 3.75vw; /* ajustando raio da borda para vw */
 
     color: #fff;
-    font-size: 14px;
+    font-size: 0.729vw; /* ajustando tamanho da fonte para vw */
     font-family: "Rubik", sans-serif;
     font-weight: bold;
     text-align: center;
@@ -125,5 +125,18 @@ main section{
 .container-main button:hover {
     background-color: #0cc0df;
     color: black;
-    border: 2px solid #ff66c4;
+    border: 0.104vw solid #ff66c4; /* ajustando largura da borda para vw */
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    .container-kit {
+        width: 90%; /* ajustando largura para vw */
+    }
+
+    .container-main button {
+        width: 15vw; /* ajustando largura para vw */
+        height: 3.125vw; /* ajustando altura para vw */
+    }
 }

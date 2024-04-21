@@ -1,4 +1,14 @@
-@media screen and (min-width: 800px) {
+/* Reset de estilos e regras gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* CARRINHO */
+
+/* Estilos específicos para o cabeçalho */
+@media screen and (min-width: 400px) and (max-width: 1920px) {
     * {
         box-sizing: border-box;
         margin: 0;
@@ -14,236 +24,152 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-size: 4vw;
+        font-size: 4vw; /* ajustando tamanho da fonte para vw */
+    }
+}
+
+/* Estilos específicos para o conteúdo principal */
+.container-main {
+    width: 100%;
+    max-width: 80vw;
+    margin: 2.5vw auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+.descricao h2 {
+    text-align: center;
+}
+
+.item-carrinho {
+    display: flex;
+    align-items: center;
+    font-family: 'Rubik';
+    background-color: #F1D1E0;
+    width: 30vw; /* ajustando largura para vw */
+    height: 11vw; /* ajustando altura para vw */
+    border-radius: 2.5vw; /* ajustando raio da borda para vw */
+    margin: 2.5vw; /* ajustando margem para vw */
+    padding-top: 0.521vw; /* ajustando padding para vw */
+}
+
+.title {
+    color: #FF66C4;
+    font-family: 'Rubik';
+    text-align: center;
+}
+
+.imagem-item img {
+    width: 10.417vw; /* ajustando largura para vw */
+    height: 9.375vw; /* ajustando altura para vw */
+    border-radius: 1.042vw; /* ajustando raio da borda para vw */
+    margin-left: 1.042vw; /* ajustando margem esquerda para vw */
+}
+
+.informacao-item {
+    margin-left: 1.042vw; /* ajustando margem esquerda para vw */
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding-top: 1.5625vw; /* ajustando padding para vw */
+    line-height: 1.5625vw; /* ajustando altura da linha para vw */
+}
+
+.titulo-item {
+    color: #000;
+    font-size: 1.5625vw; /* ajustando tamanho da fonte para vw */
+}
+
+.preco {
+    font-size: 1.5625vw; /* ajustando tamanho da fonte para vw */
+    font-weight: bold;
+}
+
+.descricao-item {
+    color: #0CC0DF;
+    font-family: 'Rubik';
+    font-size: 2.0833vw; /* ajustando tamanho da fonte para vw */
+}
+
+.descricao-item p {
+    line-height: 1.5;
+}
+
+.col-container {
+    border-left: 0.078vw solid rgb(103, 99, 99);
+    border-right: 0.078vw solid rgb(103, 99, 99);
+    height: 45vw; /* ajustando altura para vw */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1.5625vw; /* ajustando padding esquerdo para vw */
+    padding-right: 1.5625vw; /* ajustando padding direito para vw */
+}
+
+.item-entrega {
+    width: 19.375vw; /* ajustando largura para vw */
+    height: 17.5vw; /* ajustando altura para vw */
+    background-color: #F1D1E0;
+    margin: 1.328vw 1.171vw 1.562vw 1.171vw; /* ajustando margem para vw */
+    border-radius: 1.5625vw; /* ajustando raio da borda para vw */
+    font-family: 'Rubik';
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5vw; /* ajustando altura da linha para vw */
+    padding-left: 0.9375vw; /* ajustando padding esquerdo para vw */
+    padding-top: 0.625vw; /* ajustando padding superior para vw */
+}
+
+.descricao-entrega {
+    color: #0CC0DF;
+    font-size: 1.5625vw; /* ajustando tamanho da fonte para vw */
+    font-weight: bold;
+}
+
+.input-entrega {
+    width: 13.3333vw; /* ajustando largura para vw */
+    height: 1.875vw; /* ajustando altura para vw */
+    border-radius: 1.25vw; /* ajustando raio da borda para vw */
+    border-color: #F1D1E0;
+}
+
+.titulo-item-ent {
+    color: #000;
+    font-size: 1.71875vw; /* ajustando tamanho da fonte para vw */
+}
+
+.botao {
+    background-color: #ff66c4;
+    width: 10.9375vw; /* ajustando largura para vw */
+    height: 2.5vw; /* ajustando altura para vw */
+    margin-top: 1.0417vw; /* ajustando margem superior para vw */
+    margin-bottom: 1.0417vw; /* ajustando margem inferior para vw */
+    border: none;
+    border-radius: 0.833vw; /* ajustando raio da borda para vw */
+    color: white;
+    font-size: 1.0417vw; /* ajustando tamanho da fonte para vw */
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #0cc0df;
+    border: none;
+    border-radius: 0.833vw; /* ajustando raio da borda para vw */
+    color: black;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    .container-kit {
+        width: 90%; /* ajustando largura para vw */
     }
 
-    .container-main {
-        width: 100%;
-        max-width: 80vw;
-        margin: 2.5vw auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 5vw;
-    }
-
-    .descricao h2 {
-        text-align: center;
-    }
-
-    .item-carrinho {
-        display: flex;
-        align-items: center;
-        font-family: 'Rubik';
-        background-color: #F1D1E0;
-        width: 30vw;
-        height: 11vw;
-        border-radius: 2.5vw;
-        margin: 2.5vw;
-        padding-top: 0.5vw;
-    }
-
-    .title {
-        color: #FF66C4;
-        font-family: 'Rubik';
-        text-align: center;
-    }
-
-    .imagem-item img {
-        width: 10.5vw;
-        height: 9.5vw;
-        border-radius: 1.25vw;
-        margin-left: 1.25vw;
-    }
-
-    .informacao-item {
-        margin-left: 1.25vw;
-        display: flex;
-        flex-direction: column;
-        align-self: flex-start;
-        padding-top: 1.875vw;
-        line-height: 1.5625vw;
-    }
-
-    .titulo-item {
-        color: #000;
-        font-size: 1.5625vw;
-    }
-
-    .preco {
-        font-size: 1.5625vw;
-        font-weight: bold;
-    }
-
-    .descricao-item {
-        color: #0CC0DF;
-        font-family: 'Rubik';
-        font-size: 2.0833vw;
-    }
-
-    .descricao-item p {
-        line-height: 1.5;
-    }
-
-    .col-container {
-        border-left: 0.078vw solid rgb(103, 99, 99);
-        border-right: 0.078vw solid rgb(103, 99, 99);
-        height: 45vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-left: 3.125vw;
-        padding-right: 3.125vw;
-    }
-
-    .item-entrega {
-        width: 19.375vw;
-        height: 17.5vw;
-        background-color: #F1D1E0;
-        margin: 1.328vw 1.171vw 1.562vw 1.171vw;
-        border-radius: 1.5625vw;
-        font-family: 'Rubik';
-        display: flex;
-        flex-direction: column;
-        line-height: 2.5vw;
-        padding-left: 0.9375vw;
-        padding-top: 0.625vw;
-    }
-
-    .descricao-entrega {
-        color: #0CC0DF;
-        font-size: 1.5625vw;
-        font-weight: bold;
-    }
-
-    .input-entrega {
-        width: 13.3333vw;
-        height: 1.875vw;
-        border-radius: 1.25vw;
-        border-color: #F1D1E0;
-    }
-
-    .titulo-item-ent {
-        color: #000;
-        font-size: 1.71875vw;
-    }
-
-    .botao {
-        background-color: #ff66c4;
-        width: 10.9375vw;
-        height: 2.5vw;
-        margin-top: 1.0417vw;
-        margin-bottom: 1.0417vw;
-        border: 0.15625vw solid #0cc0df;
-        border-radius: 6.25vw;
-        color: #fff;
-        font-size: 0.729vw;
-        font-family: "Rubik", sans-serif;
-        font-weight: bold;
-        text-align: center;
-        text-transform: uppercase;
-        cursor: pointer;
-    }
-
-    .section-pagamento {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-family: 'Rubik';
-    }
-
-    .item-cupom {
-        display: flex;
-        flex-direction: column;
-        border-radius: 1.5625vw;
-        width: 16.40625vw;
-        height: 4.42708333vw;
-        align-items: center;
-        color: #000;
-        padding-top: 1.0417vw;
-        margin-top: 1.35416667vw;
-        margin-right: 1.171875vw;
-        margin-left: 1.171875vw;
-        margin-bottom: 2.60416667vw;
-        font-weight: bold;
-        font-size: 0.729vw;
-        background-color: #F1D1E0;
-    }
-
-    .item-pagamento {
-        display: flex;
-        flex-direction: column;
-        width: 13.28125vw;
-        height: 13.375vw;
-        background-color: #F1D1E0;
-        border-radius: 1.5625vw;
-        line-height: 1.953125vw;
-        padding-left: 0.9375vw;
-        padding-top: 0.4167vw;
-    }
-
-    .item-pagamento-total {
-        display: flex;
-        flex-direction: column;
-        margin-top: 3.6458vw;
-        margin-bottom: 3.6458vw;
-        width: 13.28125vw;
-        height: 4.6354vw;
-        background-color: #F1D1E0;
-        border-radius: 1.5625vw;
-        padding-left: 0.9375vw;
-        padding-top: 0.4167vw;
-        line-height: 1.953125vw;
-    }
-
-    .titulo-pagamento {
-        color: #0CC0DF;
-        font-size: 1.1vw;
-    }
-
-    .valor-pagamento {
-        color: #000;
-        font-size: 1.2vw;
-        font-weight: bold;
-    }
-
-    .titulo-total {
-        color: #0CC0DF;
-        font-size: 1.55vw;
-        font-weight: bold;
-        line-height: 1.55vw;
-    }
-
-    .preco-total {
-        font-weight: bold;
-        font-size: 1.55vw;
-    }
-
-    .opcoes-pagamento {
-        font-family: 'Rubik';
-        display: flex;
-        flex-direction: column;
-    }
-
-    .label-pagamento {
-        font-family: 'Rubik';
-        font-weight: bolder;
-        text-transform: uppercase;
-        color: #FF14A4;
-        margin: 0.4167vw 0vw 0.4167vw 0vw;
-    }
-
-    .lista-op-pag {
-        width: 9.140625vw;
-        height: 2vw;
-        border-radius: 1.5625vw;
-        color: black;
-        font-family: 'Rubik';
-        font-size: 0.829vw;
-        font-weight: bolder;
-        text-align: center;
-        margin: 0.4167vw 0.390625vw 1.0417vw 0.390625vw;
-        background-color: #FF14A4;
+    .container-main button {
+        width: 15vw; /* ajustando largura para vw */
+        height: 3.125vw; /* ajustando altura para vw */
     }
 }

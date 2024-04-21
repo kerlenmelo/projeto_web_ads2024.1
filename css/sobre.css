@@ -4,53 +4,67 @@
     padding: 0;
 }
 
-/* MAIN */
+/* SOBRE */
 
-main{
+main {
     background-color: #fff6ff;
 }
 
-main > h1{
+main > h1 {
     color: #ff66c4;
     font-family: "Rubik", sans-serif;
-    font-size: 55px;
+    font-size: 3.125vw; /* ajustando tamanho da fonte para vw */
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     text-align: center;
 
-    margin-top: 30px;
+    margin-top: 1.042vw; /* ajustando margem superior para vw */
 }
 
-.content h2{
-    font-size: 16px;
+.content h2 {
+    font-size: 1.042vw; /* ajustando tamanho da fonte para vw */
     font-family: "Rubik", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     color: black;
 
-    margin-top: 15px;
+    margin-top: 0.781vw; /* ajustando margem superior para vw */
 }
 
-.content p{
-    font-size: 12px;
+.content p {
+    font-size: 0.625vw; /* ajustando tamanho da fonte para vw */
     font-family: "Rubik", sans-serif;
     text-transform: uppercase;
     color: black;
 
-    margin-top: 40px;
-    margin-left: 30px;
-    max-width: 590px;
-    max-height: 260px;
+    margin-top: 2.083vw; /* ajustando margem superior para vw */
+    margin-left: 1.042vw; /* ajustando margem esquerda para vw */
+    max-width: 32.813vw; /* ajustando largura máxima para vw */
+    max-height: 14.375vw; /* ajustando altura máxima para vw */
 }
 
-/* FOOTER */
+/* Media Queries */
 
-footer {
-    bottom: 0;
+@media screen and (max-width: 768px) {
+    main > h1 {
+        font-size: 6.25vw; /* ajustando tamanho da fonte para vw */
+    }
+
+    .content h2 {
+        font-size: 2.604vw; /* ajustando tamanho da fonte para vw */
+    }
+
+    .content p {
+        font-size: 1.042vw; /* ajustando tamanho da fonte para vw */
+        margin-top: 5.208vw; /* ajustando margem superior para vw */
+        margin-left: 2.083vw; /* ajustando margem esquerda para vw */
+        max-width: 90%; /* ajustando largura máxima para vw */
+        max-height: none; /* ajustando altura máxima para vw */
+    }
 }

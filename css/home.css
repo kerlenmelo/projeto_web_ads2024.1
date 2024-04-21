@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-/* MAIN */
+/* HOME */
 
 main {
     display: flex;
@@ -20,22 +20,22 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     background-image: url(/img/confetesaofundo.png);
-    background-size: 1070px;
+    background-size: 59.583vw; /* ajustando tamanho da imagem de fundo para vw */
     background-position: center;
     background-repeat: no-repeat;
-    
-    width: 1070px;
-    height: 150px;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+
+    width: 59.583vw; /* ajustando largura para vw */
+    height: 8.333vw; /* ajustando altura para vw */
+    border-top: 0.104vw solid black; /* ajustando largura da borda para vw */
+    border-bottom: 0.104vw solid black; /* ajustando largura da borda para vw */
 }
 
 .containerColection h1 {
     color: #ff66c4;
     font-family: "Rubik", sans-serif;
-    font-size: 55px;
+    font-size: 3.125vw; /* ajustando tamanho da fonte para vw */
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -45,12 +45,12 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
 
-    width: 1070px;
+    width: 59.583vw; /* ajustando largura para vw */
 }
 
 .mainContainer > aside > p {
     color: #0cc0df;
-    font-size: 30px;
+    font-size: 1.5625vw; /* ajustando tamanho da fonte para vw */
     font-weight: 400;
     font-family: "Rubik", sans-serif;
     text-transform: uppercase;
@@ -59,14 +59,14 @@ main {
 .mainContainer button {
     background-color: #ff66c4;
 
-    width: 192px;
-    height: 40px;
+    width: 10vw; /* ajustando largura para vw */
+    height: 2.083vw; /* ajustando altura para vw */
 
-    border: 2px solid #0cc0df;
-    border-radius: 92px;
+    border: 0.104vw solid #0cc0df; /* ajustando largura da borda para vw */
+    border-radius: 5.625vw; /* ajustando raio da borda para vw */
 
     color: #fff;
-    font-size: 14px;
+    font-size: 0.729vw; /* ajustando tamanho da fonte para vw */
     font-family: "Rubik", sans-serif;
     font-weight: bold;
     text-align: center;
@@ -79,9 +79,9 @@ aside {
 }
 
 aside > p {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-right: 40px;
+    margin-top: 1.5625vw; /* ajustando margem superior para vw */
+    margin-bottom: 1.5625vw; /* ajustando margem inferior para vw */
+    margin-right: 2.083vw; /* ajustando margem direita para vw */
 }
 
 .asideButton {
@@ -91,15 +91,15 @@ aside > p {
 .asideButton:hover {
     background-color: #0cc0df;
     color: black;
-    border: 2px solid #ff66c4;
+    border: 0.104vw solid #ff66c4; /* ajustando largura da borda para vw */
 }
 
 .imageOvoPascoa {
-    width: 150px;
-    height: 150px;
-    margin: 8px;
+    width: 7.2917vw; /* ajustando largura para vw */
+    height: 7.2917vw; /* ajustando altura para vw */
+    margin: 0.4167vw; /* ajustando margem para vw */
 
-    border-radius: 15px;
+    border-radius: 1.0417vw; /* ajustando raio da borda para vw */
 }
 
 .imagesContainer {
@@ -107,32 +107,74 @@ aside > p {
     flex-direction: column;
     align-items: center;
 
-    margin: 30px 30px 40px 20px;
-    width: 200px;
-    height: 310px;
+    margin: 1.5625vw 1.5625vw 2.083vw 1.0417vw; /* ajustando margem para vw */
+    width: 13.0208vw; /* ajustando largura para vw */
+    height: 21.875vw; /* ajustando altura para vw */
 
-    border: 2px solid #ff14a4;
-    border-radius: 60px;
+    border: 0.104vw solid #ff14a4; /* ajustando largura da borda para vw */
+    border-radius: 3.75vw; /* ajustando raio da borda para vw */
 
     background-color: #0cc0df;
 }
 
 .imagesContainer h1 {
     color: black;
-    font-size: 14px;
+    font-size: 0.729vw; /* ajustando tamanho da fonte para vw */
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
 
-    margin-top: 20px;
-    margin-left: 8px;
-    margin-bottom: 10px;
+    margin-top: 1.0417vw; /* ajustando margem superior para vw */
+    margin-left: 0.417vw; /* ajustando margem esquerda para vw */
+    margin-bottom: 0.521vw; /* ajustando margem inferior para vw */
 }
 
 .imagesContainer p {
     color: #ff14a4;
-    font-size: 14px;
+    font-size: 0.729vw; /* ajustando tamanho da fonte para vw */
     font-family: "Rubik", sans-serif;
     font-weight: bold;
 
-    margin-left: 8px;
+    margin-left: 0.417vw; /* ajustando margem esquerda para vw */
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+    .containerColection {
+        width: 90%; /* ajustando largura para vw */
+    }
+
+    .mainContainer {
+        width: 90%; /* ajustando largura para vw */
+    }
+
+    .mainContainer button {
+        width: 15vw; /* ajustando largura para vw */
+        height: 3.125vw; /* ajustando altura para vw */
+    }
+
+    .imagesContainer {
+        width: 90%; /* ajustando largura para vw */
+        height: auto; /* ajustando altura para automática */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .containerColection {
+        width: 90%; /* ajustando largura para vw */
+    }
+
+    .mainContainer {
+        width: 90%; /* ajustando largura para vw */
+    }
+
+    .mainContainer button {
+        width: 15vw; /* ajustando largura para vw */
+        height: 3.125vw; /* ajustando altura para vw */
+    }
+
+    .imagesContainer {
+        width: 90%; /* ajustando largura para vw */
+        height: auto; /* ajustando altura para automática */
+    }
 }

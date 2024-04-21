@@ -1,10 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 /* HEADER */
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0px 20px 5px 20px;
+    padding: 0px 1.042vw 0.26vw 1.042vw; /* ajustando padding para vw */
 
     background-color: #fff6ff;
 }
@@ -22,39 +28,66 @@ header {
 }
 
 .image {
-    width: 130px;
-    height: 130px;
+    width: 9.375vw; /* ajustando largura para vw */
+    height: 9.375vw; /* ajustando altura para vw */
 }
 
 .nav-bar {
     justify-content: center;
 }
 
-.left-nav, .right-nav {
+.left-nav,
+.right-nav {
     display: flex;
-    gap: 40px;
-    margin-top: 10px;
+    gap: 2.083vw; /* ajustando espaço entre itens para vw */
+    margin-top: 0.521vw; /* ajustando margem superior para vw */
 }
 
-.left-menu-link, .right-menu-link {
+.left-menu-link,
+.right-menu-link {
     list-style: none;
 }
 
-.left-menu-link a, .right-menu-link a{
+.left-menu-link a,
+.right-menu-link a {
     text-decoration: none;
-    color: black;
+    color: #ff14a4;
     background-color: #ffaddc;
-    font-size: 20px;
+    font-size: 1.5625vw; /* ajustando tamanho da fonte para vw */
     font-family: "Montserrat", sans-serif;
     font-style: normal;
-    border-radius: 30px;
-    padding: 5px 8px;
+    border-radius: 4.166vw; /* ajustando raio da borda para vw */
+    padding: 0.521vw 0.834vw; /* ajustando padding para vw */
 }
-.left-menu-link.active, .right-menu-link.active {
+
+.left-menu-link.active,
+.right-menu-link.active {
     font-weight: bold;
 }
 
-.left-menu-link a:hover, .right-menu-link a:hover {
+.left-menu-link a:hover,
+.right-menu-link a:hover {
     color: white;
     background-color: #ff14a4;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0px 1.042vw 0.52vw 1.042vw; /* ajustando padding para vw */
+    }
+
+    .left-nav,
+    .right-nav {
+        gap: 1.042vw; /* ajustando espaço entre itens para vw */
+        margin-top: 1.042vw; /* ajustando margem superior para vw */
+    }
+
+    .left-menu-link a,
+    .right-menu-link a {
+        font-size: 2.604vw; /* ajustando tamanho da fonte para vw */
+        padding: 1.042vw 1.667vw; /* ajustando padding para vw */
+        border-radius: 6.25vw; /* ajustando raio da borda para vw */
+    }
 }

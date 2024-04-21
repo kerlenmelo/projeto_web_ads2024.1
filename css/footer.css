@@ -1,27 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 /* FOOTER */
 
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 1.042vw;
     background-color: #ffaddc;
-    
-    border: 3px solid #ff66c4;
+
+    border: 0.104vw solid #ff66c4;
 
     bottom: 0;
     left: 0;
     right: 0;
     width: 100%;
-    height: 73px;
+    height: 5.052vw; /* ajustando altura para vw */
 
     font-family: "Rubik", sans-serif;
     font-style: normal;
-    font-size: 16px;
-}   
+    font-size: 0.8333vw; /* ajustando tamanho da fonte para vw */
+}
 
 footer h1 {
-    font-size: 16px;
+    font-size: 0.8333vw; /* ajustando tamanho da fonte para vw */
 }
 
 .left {
@@ -29,7 +35,7 @@ footer h1 {
 }
 
 .right {
-    margin: 0px 40px;
+    margin: 0px 2.083vw; /* ajustando margem para vw */
 }
 
 .right ul {
@@ -40,7 +46,7 @@ footer h1 {
 
 .right ul li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 0.521vw; /* ajustando margem direita para vw */
 }
 
 .right ul li a {
@@ -48,5 +54,17 @@ footer h1 {
 }
 
 .space-holder {
-    height: 100px;
+    height: 5.208vw; /* ajustando altura para vw */
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 1.042vw; /* ajustando padding para vw */
+    }
+
+    .right {
+        margin: 0px 1.042vw; /* ajustando margem para vw */
+    }
 }
