@@ -1,252 +1,249 @@
+@media screen and (min-width: 800px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+    main {
+        background-color: #fff6ff;
+    }
 
-main {
-    background-color: #fff6ff;
-}
-main h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 55px;
-}
+    main h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 4vw;
+    }
 
-/* DESCRIÇÃO COMPRA   */
-.container-main{
-    width: 100%;
-    max-width: 1200px;
-    margin: 20px auto; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 75px; 
-}
+    .container-main {
+        width: 100%;
+        max-width: 80vw;
+        margin: 2.5vw auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+    }
 
-.descricao h2{
-    text-align: center;
-}
-.item-carrinho {
-    display: flex;
-    align-items: center;
-    font-family: 'Rubik';
-    background-color: #F1D1E0;
-    width: 432px;
-    height: 160.6px;
-    border-radius: 19px;
-    margin: 20px 20px 10px 20px;
-    padding-top: 4px;
-}
+    .descricao h2 {
+        text-align: center;
+    }
 
-.title{
-    color: #FF66C4;
-    font-family: 'Rubik';
-    text-align: center;
-}
+    .item-carrinho {
+        display: flex;
+        align-items: center;
+        font-family: 'Rubik';
+        background-color: #F1D1E0;
+        width: 30vw;
+        height: 11vw;
+        border-radius: 2.5vw;
+        margin: 2.5vw;
+        padding-top: 0.5vw;
+    }
 
-.imagem-item img{
-    width:150px ;
-    height:140px ;
-    border-radius: 15px;
-    margin-left: 15px;
-    
-}
+    .title {
+        color: #FF66C4;
+        font-family: 'Rubik';
+        text-align: center;
+    }
 
-.informacao-item{
-    margin-left: 15px;
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    padding-top: 15px;
-    line-height: 25px;
-}
+    .imagem-item img {
+        width: 10.5vw;
+        height: 9.5vw;
+        border-radius: 1.25vw;
+        margin-left: 1.25vw;
+    }
 
-.titulo-item{
-    color: #000;
-    font-size: 19px;
-}
+    .informacao-item {
+        margin-left: 1.25vw;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        padding-top: 1.875vw;
+        line-height: 1.5625vw;
+    }
 
-.preco{
-    font-size: 19px;
-    font-weight: bold;
-}
+    .titulo-item {
+        color: #000;
+        font-size: 1.5625vw;
+    }
 
-.descricao-item {
-    color: #0CC0DF;
-    font-family: 'Rubik';
-    font-size: 25;
-}
+    .preco {
+        font-size: 1.5625vw;
+        font-weight: bold;
+    }
 
-.descricao-item p{
-    line-height: 1.5;
-}
+    .descricao-item {
+        color: #0CC0DF;
+        font-family: 'Rubik';
+        font-size: 2.0833vw;
+    }
 
-/* ---------------  */
+    .descricao-item p {
+        line-height: 1.5;
+    }
 
-/* INFORMAÇÃO ENTREGA   */
+    .col-container {
+        border-left: 0.078vw solid rgb(103, 99, 99);
+        border-right: 0.078vw solid rgb(103, 99, 99);
+        height: 45vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 3.125vw;
+        padding-right: 3.125vw;
+    }
 
-.col-container{
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    height: 720px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-left: 50px;
-    padding-right: 50px;
+    .item-entrega {
+        width: 19.375vw;
+        height: 17.5vw;
+        background-color: #F1D1E0;
+        margin: 1.328vw 1.171vw 1.562vw 1.171vw;
+        border-radius: 1.5625vw;
+        font-family: 'Rubik';
+        display: flex;
+        flex-direction: column;
+        line-height: 2.5vw;
+        padding-left: 0.9375vw;
+        padding-top: 0.625vw;
+    }
 
-}
-.item-entrega{
-    width: 354.2px;
-    height: 320px;
-    background-color: #F1D1E0;
-    margin: 17px 15px 20px 15px;
-    border-radius: 19px;
-    font-family: 'Rubik';
-    display: flex;
-    flex-direction: column;
-    line-height: 32px;
-    padding-left: 13px;
-    padding-top: 8px;
-}
-.descricao-entrega{
-    color: #0CC0DF;
-    font-size: 22.5px;
-    font-weight: bold;
-}
-.input-entrega{
-    width: 200px;
-    height: 27px;
-    border-radius: 8px;
-    border-color: #F1D1E0;
-}
+    .descricao-entrega {
+        color: #0CC0DF;
+        font-size: 1.5625vw;
+        font-weight: bold;
+    }
 
-.titulo-item-ent{
-    color: #000;
-    font-size: 23px;
-}
+    .input-entrega {
+        width: 13.3333vw;
+        height: 1.875vw;
+        border-radius: 1.25vw;
+        border-color: #F1D1E0;
+    }
 
-.botao{
-    background-color: #ff66c4;
-    width: 192px;
-    height: 40px;
+    .titulo-item-ent {
+        color: #000;
+        font-size: 1.71875vw;
+    }
 
-    margin-top: 10px;
-    margin-bottom: 10px;
+    .botao {
+        background-color: #ff66c4;
+        width: 10.9375vw;
+        height: 2.5vw;
+        margin-top: 1.0417vw;
+        margin-bottom: 1.0417vw;
+        border: 0.15625vw solid #0cc0df;
+        border-radius: 6.25vw;
+        color: #fff;
+        font-size: 0.729vw;
+        font-family: "Rubik", sans-serif;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
 
-    border: 2px solid #0cc0df;
-    border-radius: 92px;
+    .section-pagamento {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Rubik';
+    }
 
-    color: #fff;
-    font-size: 14px;
-    font-family: "Rubik", sans-serif;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-/* CUPONS E VALE-PRESENTES E PAGAMENTO   */
+    .item-cupom {
+        display: flex;
+        flex-direction: column;
+        border-radius: 1.5625vw;
+        width: 16.40625vw;
+        height: 4.42708333vw;
+        align-items: center;
+        color: #000;
+        padding-top: 1.0417vw;
+        margin-top: 1.35416667vw;
+        margin-right: 1.171875vw;
+        margin-left: 1.171875vw;
+        margin-bottom: 2.60416667vw;
+        font-weight: bold;
+        font-size: 0.729vw;
+        background-color: #F1D1E0;
+    }
 
-.section-pagamento{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Rubik';
-}
+    .item-pagamento {
+        display: flex;
+        flex-direction: column;
+        width: 13.28125vw;
+        height: 13.375vw;
+        background-color: #F1D1E0;
+        border-radius: 1.5625vw;
+        line-height: 1.953125vw;
+        padding-left: 0.9375vw;
+        padding-top: 0.4167vw;
+    }
 
-.item-cupom{
-    display: flex;
-    flex-direction: column;
-    border-radius: 19px; 
-    width:340px;
-    height:95px ;
-    align-items: center;
-    color: #000;
-    padding-top: 15px;
-    margin-top: 19px;
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-bottom: 25px;
-    font-weight: bold;
-    font-size: 14px;
-    background-color: #F1D1E0;
-}
+    .item-pagamento-total {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3.6458vw;
+        margin-bottom: 3.6458vw;
+        width: 13.28125vw;
+        height: 4.6354vw;
+        background-color: #F1D1E0;
+        border-radius: 1.5625vw;
+        padding-left: 0.9375vw;
+        padding-top: 0.4167vw;
+        line-height: 1.953125vw;
+    }
 
-.item-pagamento{
-    display: flex;
-    flex-direction: column;
-    width: 275px;
-    height: 200.2px;
-    background-color: #F1D1E0;
-    border-radius: 19px;
-    line-height: 30px;
-    padding-left: 15px;
-    padding-top: 5px;
-}
+    .titulo-pagamento {
+        color: #0CC0DF;
+        font-size: 1.1vw;
+    }
 
-.item-pagamento-total{
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 275px;
-    height: 94px;
-    background-color: #F1D1E0;
-    border-radius: 19px;
-    padding-left: 15px;
-    padding-top: 5px;
-    line-height: 30px;
-}
-.titulo-pagamento{
-    color: #0CC0DF;
-    font-size: 19px;
-}
+    .valor-pagamento {
+        color: #000;
+        font-size: 1.2vw;
+        font-weight: bold;
+    }
 
-.valor-pagamento{
-    color: #000;
-    font-size: 17px;
-    font-weight: bold;
-}
+    .titulo-total {
+        color: #0CC0DF;
+        font-size: 1.55vw;
+        font-weight: bold;
+        line-height: 1.55vw;
+    }
 
-.titulo-total{
-    color: #0CC0DF;
-    font-size: 23px;
-    font-weight: bold;
-    line-height: 50px;
-}
+    .preco-total {
+        font-weight: bold;
+        font-size: 1.55vw;
+    }
 
-.preco-total{
-    font-weight: bold;
-    font-size: 25px;
-}
+    .opcoes-pagamento {
+        font-family: 'Rubik';
+        display: flex;
+        flex-direction: column;
+    }
 
-.opcoes-pagamento{
-    font-family: 'Rubik';
-    display: flex;
-    flex-direction: column;
-}
+    .label-pagamento {
+        font-family: 'Rubik';
+        font-weight: bolder;
+        text-transform: uppercase;
+        color: #FF14A4;
+        margin: 0.4167vw 0vw 0.4167vw 0vw;
+    }
 
-.label-pagamento{
-    font-family: 'Rubik';
-    font-weight: bolder;
-    text-transform: uppercase;
-    color: #FF14A4;
-    margin: 5px 0px 5px 0px;
-}
-.lista-op-pag{
-    width: 183px;
-    height: 29px;
-    border-radius: 19px;
-    color: black;
-    font-family: 'Rubik';
-    font-size: 15px;
-    font-weight: bolder;
-    text-align: center;
-    margin: 5px 5px 15px 5px;
-    background-color: #FF14A4;
+    .lista-op-pag {
+        width: 9.140625vw;
+        height: 2vw;
+        border-radius: 1.5625vw;
+        color: black;
+        font-family: 'Rubik';
+        font-size: 0.829vw;
+        font-weight: bolder;
+        text-align: center;
+        margin: 0.4167vw 0.390625vw 1.0417vw 0.390625vw;
+        background-color: #FF14A4;
+    }
 }
