@@ -10,7 +10,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0px 1.042vw 0.26vw 1.042vw; /* ajustando padding para vw */
+    padding: 0px 1.042vw 0.26vw 1.042vw;
 
     background-color: #fff6ff;
 }
@@ -28,8 +28,8 @@ header {
 }
 
 .image {
-    width: 9.375vw; /* ajustando largura para vw */
-    height: 9.375vw; /* ajustando altura para vw */
+    width: 9.375vw;
+    height: 9.375vw;
 }
 
 .nav-bar {
@@ -39,8 +39,8 @@ header {
 .left-nav,
 .right-nav {
     display: flex;
-    gap: 2.083vw; /* ajustando espaço entre itens para vw */
-    margin-top: 0.521vw; /* ajustando margem superior para vw */
+    gap: 2.083vw;
+    margin-top: 0.521vw;
 }
 
 .left-menu-link,
@@ -53,11 +53,11 @@ header {
     text-decoration: none;
     color: #ff14a4;
     background-color: #ffaddc;
-    font-size: 1.5625vw; /* ajustando tamanho da fonte para vw */
+    font-size: 1.5625vw;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
-    border-radius: 4.166vw; /* ajustando raio da borda para vw */
-    padding: 0.521vw 0.834vw; /* ajustando padding para vw */
+    border-radius: 4.166vw;
+    padding: 0.521vw 0.834vw;
 }
 
 .left-menu-link.active,
@@ -75,19 +75,19 @@ header {
 
 @media screen and (max-width: 768px) {
     header {
-        padding: 0px 1.042vw 0.52vw 1.042vw; /* ajustando padding para vw */
+        padding: 0px 1.042vw 0.52vw 1.042vw;
     }
 
     .left-nav,
     .right-nav {
-        gap: 1.042vw; /* ajustando espaço entre itens para vw */
-        margin-top: 1.042vw; /* ajustando margem superior para vw */
+        gap: 1.042vw;
+        margin-top: 1.042vw; 
     }
 
     .left-menu-link a,
     .right-menu-link a {
-        font-size: 2.604vw; /* ajustando tamanho da fonte para vw */
-        padding: 1.042vw 1.667vw; /* ajustando padding para vw */
-        border-radius: 6.25vw; /* ajustando raio da borda para vw */
+        font-size: 2.604vw;
+        padding: 1.042vw 1.667vw;
+        border-radius: 6.25vw;
     }
 }

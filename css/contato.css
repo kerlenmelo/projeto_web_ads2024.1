@@ -30,7 +30,7 @@ main > div > h1 {
 
     color: #ff66c4;
     font-family: "Rubik", sans-serif;
-    font-size: 4.427vw; /* ajustando tamanho da fonte para vw */
+    font-size: 4.427vw;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -42,20 +42,20 @@ main {
 
 main > div > nav {
     display: inline-block;
-    margin: 3.896vw; /* ajustando margem para vw */
+    margin: 3.896vw;
 }
 
 div > nav h2 {
     color: #ff66c4;
     font-family: "Rubik", sans-serif;
-    font-size: 2.604vw; /* ajustando tamanho da fonte para vw */
+    font-size: 2.604vw;
     font-weight: bold;
     text-align: center;
 }
 
 a > img {
-    width: 12.083vw; /* ajustando largura para vw */
-    height: 12.083vw; /* ajustando altura para vw */
+    width: 12.083vw;
+    height: 12.083vw;
 }
 
 /* FOOTER */
@@ -69,15 +69,15 @@ footer {
 
 @media screen and (max-width: 768px) {
     main > div > h1 {
-        font-size: 6.25vw; /* ajustando tamanho da fonte para vw */
+        font-size: 6.25vw;
     }
 
     div > nav h2 {
-        font-size: 4.167vw; /* ajustando tamanho da fonte para vw */
+        font-size: 4.167vw;
     }
 
     a > img {
-        width: 31.25vw; /* ajustando largura para vw */
-        height: 31.25vw; /* ajustando altura para vw */
+        width: 31.25vw;
+        height: 31.25vw;
     }
 }

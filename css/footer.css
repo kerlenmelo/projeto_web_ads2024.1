@@ -19,15 +19,15 @@ footer {
     left: 0;
     right: 0;
     width: 100%;
-    height: 5.052vw; /* ajustando altura para vw */
+    height: 5.052vw; 
 
     font-family: "Rubik", sans-serif;
     font-style: normal;
-    font-size: 0.8333vw; /* ajustando tamanho da fonte para vw */
+    font-size: 0.8333vw;
 }
 
 footer h1 {
-    font-size: 0.8333vw; /* ajustando tamanho da fonte para vw */
+    font-size: 0.8333vw;
 }
 
 .left {
@@ -35,7 +35,7 @@ footer h1 {
 }
 
 .right {
-    margin: 0px 2.083vw; /* ajustando margem para vw */
+    margin: 0px 2.083vw; 
 }
 
 .right ul {
@@ -46,7 +46,7 @@ footer h1 {
 
 .right ul li {
     display: inline;
-    margin-right: 0.521vw; /* ajustando margem direita para vw */
+    margin-right: 0.521vw;
 }
 
 .right ul li a {
@@ -54,17 +54,17 @@ footer h1 {
 }
 
 .space-holder {
-    height: 5.208vw; /* ajustando altura para vw */
+    height: 5.208vw; 
 }
 
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
     footer {
-        padding: 1.042vw; /* ajustando padding para vw */
+        padding: 1.042vw;
     }
 
     .right {
-        margin: 0px 1.042vw; /* ajustando margem para vw */
+        margin: 0px 1.042vw; 
     }
 }
