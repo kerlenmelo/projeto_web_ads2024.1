@@ -1,0 +1,284 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* CARRINHO */
+
+@media screen and (min-width: 400px) and (max-width: 1920px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        background-color: #fff6ff;
+    }
+
+    main h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 6vw; 
+    }
+}
+.title-principal{
+    font-family: 'Rubik';
+    font-size: 4.6vw;
+    color: #FF66C4;
+}
+
+.container-main {
+    width: 100%;
+    max-width: 80vw;
+    margin: 2.5vw auto;
+    display: flex;
+    justify-content: center;
+
+    gap: 5vw;
+}
+
+.descricao h2 {
+    text-align: center;
+}
+
+.item-carrinho {
+    display: flex;
+    align-items: center;
+    font-family: 'Rubik';
+    background-color: #F1D1E0;
+    width: 30vw; 
+    height: 11vw; 
+    border-radius: 2.5vw; 
+    margin: 2.5vw;
+    padding-top: 0.521vw; 
+}
+
+.title {
+    color: #FF66C4;
+    font-family: 'Rubik';
+    text-align: center;
+    font-size: 2.2vw;
+}
+
+.imagem-item img {
+    width: 10.417vw; 
+    height: 9.375vw; 
+    border-radius: 1.042vw; 
+    margin-left: 1.042vw; 
+}
+
+.informacao-item {
+    margin-left: 1.042vw; 
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding-top: 1.5625vw; 
+    line-height: 1.8625vw; 
+}
+
+.titulo-item {
+    color: #000;
+    font-size: 1.3625vw; 
+}
+
+.preco {
+    font-size: 1.5625vw;
+    font-weight: bold;
+}
+
+.descricao-item {
+    color: #0CC0DF;
+    font-family: 'Rubik';
+    font-size: 1.3833vw;
+}
+
+.descricao-item p {
+    line-height: 1.5;
+}
+
+.col-container {
+    border-left: 0.100vw solid rgb(103, 99, 99);
+    border-right: 0.100vw solid rgb(103, 99, 99);
+    height: 55vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 1.9625vw;
+    padding-right: 1.9625vw;
+}
+
+
+.item-entrega {
+    width: 19.375vw; 
+    height: 18.5vw; 
+    background-color: #F1D1E0;
+    margin: 2.5vw 1.171vw 1.562vw 1.171vw; 
+    border-radius: 1.5625vw; 
+    font-family: 'Rubik';
+    display: flex;
+    flex-direction: column;
+    line-height: 1.95vw; 
+    padding-left: 0.9375vw; 
+    padding-top: 0.625vw; 
+}
+
+.descricao-entrega {
+    color: #0CC0DF;
+    font-size: 1.5625vw; 
+    font-weight: bold;
+}
+
+.input-entrega {
+    width: 13.3333vw; 
+    height: 1.875vw;
+    padding-left: 0.8vw;
+    font-family: 'Rubik';
+    border-radius: 1.25vw; 
+    border-color: #F1D1E0;
+}
+
+.titulo-item-ent {
+    color: #000;
+    font-size: 1.71875vw; 
+}
+
+.botao {
+    background-color: #ff66c4;
+    width: 10.9375vw; 
+    height: 2.5vw; 
+    font-family: 'Rubik';
+    font-weight: bold;
+    margin-top: 1.0417vw; 
+    margin-bottom: 1.0417vw; 
+    border-color:#0CC0DF ;
+    border-radius: 0.833vw; 
+    color: white;
+    font-size: 1.0417vw;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #0cc0df;
+    border: none;
+    border-radius: 0.833vw;
+    color: black;
+}
+
+.section-pagamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Rubik';
+}
+
+.item-cupom {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5625vw;
+    width: 16.40625vw;
+    height: 4.42708333vw;
+    align-items: center;
+    color: #000;
+    padding-top: 1.0417vw;
+    margin-top: 2.35vw;
+    margin-right: 1.171875vw;
+    margin-left: 1.171875vw;
+    margin-bottom: 2.60416667vw;
+    font-weight: bold;
+    font-size: 0.729vw;
+    background-color: #F1D1E0;
+}
+
+.item-pagamento {
+    display: flex;
+    flex-direction: column;
+    width: 13.28125vw;
+    height: 13.375vw;
+    background-color: #F1D1E0;
+    border-radius: 1.5625vw;
+    line-height: 1.953125vw;
+    padding-left: 0.9375vw;
+    padding-top: 0.4167vw;
+}
+
+.item-pagamento-total {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.6458vw;
+    margin-bottom: 3.6458vw;
+    width: 13.28125vw;
+    height: 4.6354vw;
+    background-color: #F1D1E0;
+    border-radius: 1.5625vw;
+    padding-left: 0.9375vw;
+    padding-top: 0.4167vw;
+    line-height: 1.953125vw;
+}
+
+.titulo-pagamento {
+    color: #0CC0DF;
+    font-size: 1.1vw;
+}
+
+.valor-pagamento {
+    color: #000;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+.titulo-total {
+    color: #0CC0DF;
+    font-size: 1.55vw;
+    font-weight: bold;
+    line-height: 1.55vw;
+}
+
+.preco-total {
+    font-weight: bold;
+    font-size: 1.55vw;
+}
+
+.opcoes-pagamento {
+    font-family: 'Rubik';
+    display: flex;
+    flex-direction: column;
+}
+
+.label-pagamento {
+    font-family: 'Rubik';
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #FF14A4;
+    margin: 0.4167vw 0vw 0.4167vw 0vw;
+}
+
+.lista-op-pag {
+    width: 9.140625vw;
+    height: 2vw;
+    border-radius: 1.5625vw;
+    color: black;
+    font-family: 'Rubik';
+    font-size: 0.829vw;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0.4167vw 0.390625vw 1.0417vw 0.390625vw;
+    background-color: #FF14A4;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    .container-kit {
+        width: 90%; 
+    }
+
+    .container-main button {
+        width: 15vw; 
+        height: 3.125vw; 
+    }
+}

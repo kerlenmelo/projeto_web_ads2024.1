@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* HOME */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    background-color: #fff6ff;
+}
+
+.containerColection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(/img/confetesaofundo.png);
+    background-size: 59.583vw;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 59.583vw;
+    height: 8.333vw;
+    border-top: 0.104vw solid black; 
+    border-bottom: 0.104vw solid black; 
+}
+
+.containerColection h1 {
+    color: #ff66c4;
+    font-family: "Rubik", sans-serif;
+    font-size: 3.125vw;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    width: 59.583vw;
+}
+
+.mainContainer > aside > p {
+    color: #0cc0df;
+    font-size: 1.5625vw;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+    text-transform: uppercase;
+}
+
+.mainContainer button {
+    background-color: #ff66c4;
+
+    width: 10vw;
+    height: 2.083vw;
+
+    border: 0.104vw solid #0cc0df;
+    border-radius: 5.625vw;
+
+    color: #fff;
+    font-size: 0.729vw;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
+aside > p {
+    margin-top: 1.5625vw; 
+    margin-bottom: 1.5625vw;
+    margin-right: 2.083vw;
+}
+
+.asideButton {
+    cursor: pointer;
+}
+
+.asideButton:hover {
+    background-color: #0cc0df;
+    color: black;
+    border: 0.104vw solid #ff66c4;
+}
+
+.imageOvoPascoa {
+    width: 7.2917vw; 
+    height: 7.2917vw;
+    margin: 0.4167vw;
+
+    border-radius: 1.0417vw;
+}
+
+.imagesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 1.5625vw 1.5625vw 2.083vw 1.0417vw;
+    width: 13.0208vw; 
+    height: 21.875vw;
+
+    border: 0.104vw solid #ff14a4;
+    border-radius: 3.75vw;
+
+    background-color: #0cc0df;
+}
+
+.imagesContainer h1 {
+    color: black;
+    font-size: 0.729vw;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+
+    margin-top: 1.0417vw;
+    margin-left: 0.417vw;
+    margin-bottom: 0.521vw;
+}
+
+.imagesContainer p {
+    color: #ff14a4;
+    font-size: 0.729vw;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+
+    margin-left: 0.417vw;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+    .containerColection {
+        width: 90%;
+    }
+
+    .mainContainer {
+        width: 90%;
+    }
+
+    .mainContainer button {
+        width: 15vw;
+        height: 3.125vw;
+    }
+
+    .imagesContainer {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .containerColection {
+        width: 90%;
+    }
+
+    .mainContainer {
+        width: 90%;
+    }
+
+    .mainContainer button {
+        width: 15vw;
+        height: 3.125vw;
+    }
+
+    .imagesContainer {
+        width: 90%; 
+        height: auto;
+    }
+}
