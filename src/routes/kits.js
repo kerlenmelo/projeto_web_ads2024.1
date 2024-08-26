@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { getAllKits } from '../models/getAllKits.js';
+import { getAllKits } from '../models/kits.js';
 
 
 const routerKits = Router();
