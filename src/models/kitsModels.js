@@ -7,4 +7,4 @@ async function getAllKits() {
     return kits_produtos;
 }
 
-export {getAllKits}
+export { getAllKits }
