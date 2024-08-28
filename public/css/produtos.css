@@ -1,5 +1,184 @@
+/* Reset básico */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+/* Estilização do body e html */
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff6ff;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+    background-color: #fff;
+    border-bottom: 2px solid #FF66C4;
+}
+
+.left-image-decoration img,
+.right-image-decoration img {
+    width: 100%;
+    height: auto;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.left-nav,
+.right-nav {
+    display: flex;
+    list-style-type: none;
+}
+
+.left-menu-link,
+.right-menu-link {
+    margin: 0 1vw;
+}
+
+.left-menu-link a,
+.right-menu-link a {
+    text-decoration: none;
+    color: #FF66C4;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+
+.left-menu-link.active a,
+.right-menu-link a:hover {
+    color: #0CC0DF;
+}
+
+/* Main */
+main {
+    padding: 2vw;
+}
+
+.container-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+
+.card-produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F1D1E0;
+    width: 80%;
+    max-width: 1200px;
+    padding: 2vw;
+    border-radius: 1vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-produto img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 1vw;
+}
+
+.card-produto h3 {
+    font-family: 'Rubik', sans-serif;
+    color: #FF66C4;
+    font-size: 2vw;
+    margin: 1vw 0;
+}
+
+.card-produto p {
+    font-family: 'Rubik', sans-serif;
+    color: #333;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.card-produto span {
+    font-family: 'Rubik', sans-serif;
+    color: #FF66C4;
+    font-size: 1.8vw;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #FF66C4;
+    color: white;
+    padding: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2vw;
+}
+
+.left p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2vw;
+}
+
+.right ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1vw;
+}
+
+.right a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2vw;
+}
+
+.right a:hover {
+    color: #0CC0DF;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .container-principal {
+        padding: 1vw;
+    }
+
+    .card-produto {
+        width: 100%;
+        padding: 1vw;
+    }
+
+    .card-produto h3 {
+        font-size: 4vw;
+    }
+
+    .card-produto p {
+        font-size: 2.5vw;
+    }
+
+    .card-produto span {
+        font-size: 3vw;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    .left-nav,
+    .right-nav {
+        flex-direction: column;
+    }
+
+    .left-menu-link,
+    .right-menu-link {
+        margin: 0.5vw 0;
+    }
 }
