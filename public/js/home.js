@@ -15,7 +15,7 @@ async function main() {
     
 }
 
-async function preencherCarrossel(produtos) { 
+function preencherCarrossel(produtos) { 
     const carrosselContainer = document.querySelector('.carrossel-container');
 
     produtos.forEach(produto => {

@@ -6,7 +6,7 @@ const routerHome = Router();
 
 
 routerHome.get("/home", (req, res) => {
-    res.sendFile(path.resolve('../public/html/home.html'));
+    res.sendFile(path.resolve('./public/html/home.html'));
 });
 
 export { routerHome }
