@@ -1,13 +1,12 @@
 import { Router } from 'express';
-import { getAllProducts } from '../models/productsModels.js';
+import path from 'path';
 
 
-const routerProdutos = Router();
+const routerHome = Router();
 
 
-routerProdutos.get("/api/produtos", async (_, response) => {
-    const produto = await getAllProducts()
-    return response.status(200).json(produto)
+routerHome.get("/home", (req, res) => {
+    res.sendFile(path.resolve('../public/html/home.html'));
 });
 
-export { routerProdutos}
+export { routerHome }
