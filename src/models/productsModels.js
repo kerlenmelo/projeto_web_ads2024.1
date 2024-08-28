@@ -8,3 +8,17 @@ async function getAllProducts() {
 }
 
 export { getAllProducts }
+
+
+async function getProductIds() {
+    try {
+        const products = await getAllProducts();
+        const productIds = products.map(product => product.id);
+        return productIds;
+    } catch (error) {
+        console.error("Erro ao obter os IDs dos produtos:", error);
+        throw error; // ou lidere o erro de outra forma conforme necessário
+    }
+}
+
+export {getProductIds}
