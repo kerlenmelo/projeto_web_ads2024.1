@@ -1,49 +1,65 @@
 window.addEventListener("load", main);
 
-let produtos = []
+let produtos = [];
 
 async function main() {
     try {
-        const dados = await fetch("http://localhost:3000/api/produtos");
-        const dadosJson = await dados.json();
+        const response = await fetch("http://localhost:3000/api/produtos");
+        const dadosJson = await response.json();
         produtos = dadosJson;
-        preencherCarrossel(produtos)
-    } catch(e) {
-        console.log("Error ao buscar produtos: ", e)
+        preencherCarrossel(produtos);
+        configurarNavegacao();
+    } catch (e) {
+        console.log("Error ao buscar produtos: ", e);
     }
-
-    
 }
 
 function preencherCarrossel(produtos) { 
     const carrosselContainer = document.querySelector('.carrossel-container');
+    
+    // Limpar o container antes de preencher com novos produtos
+    carrosselContainer.innerHTML = '';
 
     produtos.forEach(produto => {
         const item = document.createElement('div');
-        item.classList.add('carrossel-item')
+        item.classList.add('carrossel-item');
         item.innerHTML = 
         `
             <img src="${produto.img}" alt="${produto.titulo}">
             <p>${produto.titulo}</p>
-        `
+        `;
         carrosselContainer.appendChild(item);
     });
+
+    // Atualizar o carrossel após preencher
+    updateCarrossel();
 }
 
 let currentIndex = 0;
 
-document.querySelector('.next').addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % produtos.length;
-    updateCarrossel();
-});
+function configurarNavegacao() {
+    const nextButton = document.querySelector('.next');
+    const prevButton = document.querySelector('.prev');
 
-document.querySelector('.prev').addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + produtos.length) % produtos.length;
-    updateCarrossel();
-});
+    if (nextButton && prevButton) {
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % produtos.length;
+            updateCarrossel();
+        });
+
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + produtos.length) % produtos.length;
+            updateCarrossel();
+        });
+    }
+}
 
 function updateCarrossel() {
     const carrosselContainer = document.querySelector('.carrossel-container');
-    const offset = -currentIndex * 100;
-    carrosselContainer.style.transform = `translateX(${offset}%)`;
+    
+    if (carrosselContainer && produtos.length > 0) {
+        const itemWidth = 100 / produtos.length; // Supondo que cada item ocupa 100% / número de itens
+        const offset = -currentIndex * itemWidth;
+        carrosselContainer.style.transform = `translateX(${offset}%)`;
+    }
 }
