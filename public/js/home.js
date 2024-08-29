@@ -3,6 +3,7 @@ window.addEventListener("load", main);
 let produtos = [];
 let currentIndex = 0;
 let isTransitioning = false;
+const itemsPerPage = 5; // Número de itens exibidos por vez
 
 async function main() {
     try {
@@ -25,17 +26,14 @@ function preencherCarrossel(produtos) {
 
     produtos.forEach(produto => {
         const item = document.createElement('div');
-        item.classList.add('carrossel-item');
+        item.classList.add('carrossel-item'); // Aplicando a classe do item
         item.innerHTML = `
-            <img src="${produto.img}" alt="${produto.titulo}">
+            <img src="${produto.img}" alt="${produto.titulo}" class="carrossel-img"> <!-- Aplicando a classe da imagem -->
             <p>${produto.titulo}</p>
         `;
         carrosselContainer.appendChild(item);
     });
 
-    // Ajustar a largura do container do carrossel
-    const totalWidth = produtos.length * (100 / 3);
-    carrosselContainer.style.width = `${totalWidth}%`;
 }
 
 function configurarNavegacao() {
@@ -61,26 +59,29 @@ function configurarNavegacao() {
 
 function updateCarrossel() {
     const carrosselContainer = document.querySelector('.carrossel-container');
-    const itemWidth = carrosselContainer.querySelector('.carrossel-item').offsetWidth;
-    const totalItems = produtos.length / 2;
+    const totalItems = produtos.length * 2; // Porque duplicamos os itens
+    const totalPages = totalItems / itemsPerPage;
 
-    carrosselContainer.style.transform = `translateX(${-currentIndex * itemWidth}px)`;
+    // Calcula a nova posição
+    const newPosition = -currentIndex * (100 / itemsPerPage);
 
-    carrosselContainer.addEventListener('transitionend', () => {
-        isTransitioning = false;
+    carrosselContainer.style.transition = 'transform 0.5s ease-in-out';
+    carrosselContainer.style.transform = `translateX(${newPosition}%)`;
 
+    carrosselContainer.addEventListener('transitionend', function handleTransitionEnd() {
         if (currentIndex >= totalItems) {
             currentIndex = 0;
             carrosselContainer.style.transition = 'none';
-            carrosselContainer.style.transform = `translateX(0)`;
+            carrosselContainer.style.transform = `translateX(0%)`;
         } else if (currentIndex < 0) {
-            currentIndex = totalItems - 1;
+            currentIndex = totalItems - itemsPerPage;
             carrosselContainer.style.transition = 'none';
-            carrosselContainer.style.transform = `translateX(${-currentIndex * itemWidth}px)`;
+            carrosselContainer.style.transform = `translateX(${-currentIndex * (100 / itemsPerPage)}%)`;
         }
-
         setTimeout(() => {
             carrosselContainer.style.transition = 'transform 0.5s ease-in-out';
-        });
+        }, 20); // Pequeno delay para garantir que a transição seja reabilitada
+        carrosselContainer.removeEventListener('transitionend', handleTransitionEnd);
+        isTransitioning = false;
     });
 }

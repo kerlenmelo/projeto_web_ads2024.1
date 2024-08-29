@@ -1,130 +1,151 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Main */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 2vw;
+  text-align: center;
+  background-color: #fff6ff;
+}
+
+main h1 {
+  font-family: "Rubik", sans-serif;
+  color: #ff66c4;
+  font-size: 2.5vw;
+  margin-bottom: 2vw;
+}
+
+/* Carrossel */
+.container-principal {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0 auto; /* Centraliza a seção principal */
+}
+
+.carrossel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* Ajusta a largura para caber todos os itens (5 itens por vez) */
+}
+
+.carrossel-item {
+  flex: 0 0 20%; /* Exibir 5 itens por vez */
+  height: 250px; /* Altura fixa para os itens */
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.carrossel-item img {
+  width: 100%;
+  height: 100%; /* Ajusta a altura das imagens para preencher o item */
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+  border-radius: 10px;
+}
+
+.carrossel-item p {
+  margin: 10px 0; /* Adiciona uma margem entre a imagem e o texto */
+  font-family: "Rubik", sans-serif;
+  color: #ff66c4;
+  font-size: 20px;
+}
+
+.carrossel-item img:hover {
+  transform: scale(1.05);
+}
+
+.botoes-carrossel {
+  margin-top: 25px; /* Espaçamento acima dos botões */
+  display: flex;
+  justify-content: center; /* Centraliza os botões horizontalmente */
+  gap: 10px; /* Espaçamento entre os botões */
+}
+button.prev,
+button.next {
+  background-color: #ff66c4;
+  color: white;
+  border: none;
+  padding: 1vw 2vw;
+  font-size: 1vw;
+  border-radius: 5px;
+  cursor: pointer;
+  bottom: 10px; /* Posiciona os botões na parte inferior do carrossel */
+  z-index: 1;
+}
+
+button.prev {
+  left: 10px; /* Distância da borda esquerda */
+}
+
+button.next {
+  right: 10px; /* Distância da borda direita */
+}
+
+button.prev:hover,
+button.next:hover {
+  background-color: #0cc0df;
+}
+
+/* Call to Action */
+.call-to-action {
+  margin-top: 2vw;
+}
+
+.call-to-action h2 {
+  font-family: "Rubik", sans-serif;
+  color: #ff66c4;
+  font-size: 2.5vw;
+  margin-bottom: 2vw;
+}
+
+.cta-button {
+  background-color: #ff66c4;
+  color: white;
+  text-decoration: none;
+  padding: 1vw 2vw;
+  font-size: 1.2vw;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: #0cc0df;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
   main {
-    padding: 2vw;
-    text-align: center;
-    background-color: #fff6ff;
+      padding: 1vw;
   }
-  
+
   main h1 {
-    font-family: "Rubik", sans-serif;
-    color: #ff66c4;
-    font-size: 2.5vw;
-    margin-bottom: 2vw;
+      font-size: 4vw;
   }
-  
-  /* Carrossel */
-  .carrossel-container {
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    gap: 1vw;
-    margin-bottom: 2vw;
-    transition: transform 0.5s ease-in-out;
-  }
-  
+
   .carrossel-item {
-    flex: 0 0 calc(100% / 3);
-    box-sizing: border-box;
-    text-align: center;
+      flex: 0 0 50%;
   }
-  
+
   .carrossel-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
+      height: auto; /* Ajusta a altura para a imagem se ajustar corretamente */
   }
-  
-  .carrossel-item img:hover {
-    transform: scale(1.05);
-  }
-  
-  .carrossel-item p {
-    margin-top: 0.5vw;
-    font-family: "Montserrat", sans-serif;
-    color: #333;
-    font-size: 1vw;
-  }
-  
-  /* Botões de Navegação */
+
   button.prev,
   button.next {
-    background-color: #ff66c4;
-    color: white;
-    border: none;
-    padding: 1vw 2vw;
-    font-size: 1vw;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 1vw;
-  }
-  
-  button.prev:hover,
-  button.next:hover {
-    background-color: #0cc0df;
-  }
-  
-  /* Call to Action */
-  .call-to-action {
-    margin-top: 2vw;
-  }
-  
-  .call-to-action h2 {
-    font-family: "Rubik", sans-serif;
-    color: #ff66c4;
-    font-size: 2.5vw;
-    margin-bottom: 2vw;
-  }
-  
-  .cta-button {
-    background-color: #ff66c4;
-    color: white;
-    text-decoration: none;
-    padding: 1vw 2vw;
-    font-size: 1.2vw;
-    border-radius: 5px;
-    display: inline-block;
-  }
-  
-  .cta-button:hover {
-    background-color: #0cc0df;
-  }
-  
-  /* Media Queries */
-  @media screen and (max-width: 768px) {
-    main {
-      padding: 1vw;
-    }
-  
-    main h1 {
-      font-size: 4vw;
-    }
-  
-    .carrossel-item {
-      flex: 0 0 50%;
-    }
-  
-    .carrossel-item img {
-      width: 100%;
-      height: auto;
-    }
-  
-    button.prev,
-    button.next {
       padding: 0.5vw 1vw;
       font-size: 2vw;
-    }
-  
-    .cta-button {
-      font-size: 2vw;
-    }
   }
-  
+
+  .cta-button {
+      font-size: 2vw;
+  }
+}
