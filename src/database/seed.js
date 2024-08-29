@@ -6,7 +6,7 @@ async function seedDatabase() {
     const produtos = [
         { id: '1', img: '../img/brigadeiro.jpeg', titulo: 'Brigadeiro', descricao: 'Delicioso brigadeiro tradicional.', valor: 1.50 },
         { id: '2', img: '../img/casadinho.jpg', titulo: 'Beijinho', descricao: 'Beijinho de coco coberto com açúcar cristal.', valor: 1.50 },
-        { id: '3', img: '../img/ovo-pascoa-aoleite.jpeg', titulo: 'Ovo de Páscoa ao Leite', descricao: 'Ovo de Páscoa feito com chocolate ao leite.', valor: 25.00 },
+        { id: '3', img: '../img/ovo_kitkat.png', titulo: 'Ovo de Páscoa ao Leite', descricao: 'Ovo de Páscoa feito com chocolate ao leite.', valor: 25.00 },
         { id: '4', img: '../img/ovo-pascoa-trufado.jpg', titulo: 'Ovo de Páscoa Trufado', descricao: 'Ovo de Páscoa trufado com recheio de brigadeiro.', valor: 35.00 },
         { id: '5', img: '../img/ovo-pascoa-branco.jpg', titulo: 'Ovo de Páscoa Branco', descricao: 'Ovo de Páscoa feito com chocolate branco.', valor: 28.00 },
         { id: '6', img: '../img/bolo-de-cenoura-com-cobertura-de-chocolate.jpg', titulo: 'Bolo de Cenoura', descricao: 'Bolo de cenoura com cobertura de chocolate.', valor: 20.00 },

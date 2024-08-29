@@ -282,3 +282,52 @@
         height: 3.125vw; 
     }
 }
+/* Adicione esses ajustes ao final do seu CSS */
+
+@media screen and (max-width: 768px) {
+    .item-carrinho {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        margin: 1.5vw auto;
+    }
+
+    .imagem-item img {
+        width: 80vw;
+        height: auto;
+    }
+
+    .informacao-item {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .preco {
+        font-size: 1.5rem;
+    }
+
+    .input-entrega {
+        width: 80%;
+        height: 2.5vw;
+    }
+
+    .botao {
+        width: 80%;
+        height: 3vw;
+    }
+
+    .section-pagamento {
+        width: 90%;
+        margin: 1.5vw auto;
+    }
+
+    .item-cupom {
+        width: 90%;
+    }
+
+    .item-pagamento, .item-pagamento-total {
+        width: 90%;
+        height: auto;
+        margin-bottom: 2vw;
+    }
+}

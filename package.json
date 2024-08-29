@@ -19,6 +19,7 @@
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "install": "^0.13.0",
+    "projeto_web_ads2024.1": "file:",
     "sqlite": "^5.1.1",
     "sqlite3": "^5.1.7"
   }

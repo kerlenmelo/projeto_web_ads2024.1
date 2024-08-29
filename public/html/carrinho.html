@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -46,53 +45,22 @@
         <div class="container-main">            
             <section class="descricao"> 
                 <h2 class="title">DESCRIÇÃO COMPRA </h2>       
-                <div class="item-carrinho">
+                <!-- A lista de itens será gerada pelo JavaScript -->
+                <div class="item-carrinho-template d-none">
                     <div class="imagem-item">
-                        <img src="../img/ovo_brownie.jpeg" alt="Ovo de páscoa sabor brownie">
+                        <img src="" alt="">
                     </div>
                     <div class="informacao-item">
-                        <h3 class="titulo-item">Ovo de Páscoa - Brownie <br> </h3>
-                        <p class="descricao-item"> Peso: 200g <br></p>
-                        <p class="descricao-item">Quantidade: 01 <br> </p>
-                        <p class="preco">R$ 27,99</p>
+                        <h3 class="titulo-item"></h3>
+                        <p class="descricao-item">Peso: </p>
+                        <p class="descricao-item">Quantidade: </p>
+                        <p class="preco"></p>
                     </div>
                 </div>
-                <div class="item-carrinho">
-                    <div class="imagem-item">
-                        <img src="../img/ovo_kitkat.png" alt="Ovo de páscoa sabor KitKat">
-                    </div>
-
-                    <div class="informacao-item">
-                        <h3 class="titulo-item" >Ovo de Páscoa - KitKat</h3>
-                        <p class="descricao-item"> Peso: 200g <br></p>
-                        <p class="descricao-item">Quantidade: 01</p>
-                        <p class="preco">R$ 27,99</p>
-                    </div>
-                </div>
-                <div class="item-carrinho">
-                    <div class="imagem-item">
-                        <img src="../img/ovo_oreo.jpg" alt="Ovo de páscoa sabor Oreo">
-
-                    </div>
-                    <div class="informacao-item">
-                        <h3 class="titulo-item">Ovo de Páscoa - Oreo</h3>
-                        <p class="descricao-item"> Peso: 200g</p>
-                        <p class="descricao-item">Quantidade: 01</p>
-                        <p class="preco">R$ 27,99</p>
-                    </div>
-                </div>
-
-                <div class="item-carrinho">
-                    <div class="imagem-item">
-                        <img src="../img/ovo_oreo.jpg" alt="Ovo de páscoa sabor Oreo">
-
-                    </div>
-                    <div class="informacao-item">
-                        <h3 class="titulo-item">Ovo de Páscoa - Oreo</h3>
-                        <p class="descricao-item"> Peso: 400g</p>
-                        <p class="descricao-item">Quantidade: 01</p>
-                        <p class="preco">R$ 47,99</p>
-                    </div>
+                <div class="item-carrinho-container"></div>
+                <div class="item-total">
+                    <h3 class="titulo-total">TOTAL: </h3>
+                    <p class="preco-total">R$ 0,00</p>
                 </div>
             </section>
             <section class="entrega">
@@ -101,43 +69,43 @@
                     <div class="item-entrega">
                         <h3 class="titulo-item-ent">ENDEREÇO</h3>
                         <p class="descricao-entrega">Rua: </p>
-                        <input class="input-entrega" type="Text">
+                        <input class="input-entrega" type="text">
                         <p class="descricao-entrega">Número: </p>
-                        <input class="input-entrega" type="Text">
-                        <p class="descricao-entrega">Bairro:  </p>
-                        <input class="input-entrega" type="Text">
-                        <p class="descricao-entrega">Complemento:  </p>
-                        <input class="input-entrega" type="Text">
+                        <input class="input-entrega" type="text">
+                        <p class="descricao-entrega">Bairro: </p>
+                        <input class="input-entrega" type="text">
+                        <p class="descricao-entrega">Complemento: </p>
+                        <input class="input-entrega" type="text">
                     </div>
                     <div class="item-entrega">
                         <h3 class="titulo-item-ent">DADOS PESSOAIS </h3>
                         <p class="descricao-entrega"> Nome:</p>
-                        <input class="input-entrega" type="Text">
+                        <input class="input-entrega" type="text">
                         <p class="descricao-entrega">CPF:</p>
-                        <input class="input-entrega" type="Text">
+                        <input class="input-entrega" type="text">
                         <p class="descricao-entrega">E-mail:</p>
-                        <input class="input-entrega" type="Text">
+                        <input class="input-entrega" type="text">
                         <p class="descricao-entrega">Telefone:</p>
-                        <input class="input-entrega" type="Text">
+                        <input class="input-entrega" type="text">
                     </div>
-                    <button name="Enviar" type="Text" class="botao"> CONFIRMAR </button>
+                    <button name="Enviar" type="text" class="botao"> CONFIRMAR </button>
                 </div>
             </section>
             <section class="section-pagamento">
-                <h2 class="title">CUPOMS E VALE-COMPRAS </h2>
+                <h2 class="title">CUPONS E VALE-COMPRAS </h2>
                 <div class="item-cupom">   
                     <p>INSIRA SEU CUPOM OU VALE-PRESENTES </p>
-                    <input class='input-entrega'type="Text">
+                    <input class='input-entrega' type="text">
                 </div>
                 <h2 class='title'> PAGAMENTO</h2>
                 <div class='opcoes-pagamento'>
-                <label class="label-pagamento" for="forma-pagamento">Forma de pagamento: </label>
-                <select class='lista-op-pag'name="forma-pagamento">
-                    <option value="1">Cartão de Crédito </option>
-                    <option value="2">Cartão de Débito</option>
-                    <option value="3">Pix</option>
-                    <option value="4">Boleto</option>
-                </select>
+                    <label class="label-pagamento" for="forma-pagamento">Forma de pagamento: </label>
+                    <select class='lista-op-pag' name="forma-pagamento">
+                        <option value="1">Cartão de Crédito </option>
+                        <option value="2">Cartão de Débito</option>
+                        <option value="3">Pix</option>
+                        <option value="4">Boleto</option>
+                    </select>
                 </div>
                 <div class="pagamento">
                     <div class="item-pagamento">
@@ -153,14 +121,14 @@
                         <p class="preco-total">R$ 68,97</p>
                     </div>
                 </div>
-                <button name="Concluir" type="Text" class="botao"> CONCLUIR </button>
+                <button name="Concluir" type="text" class="botao"> CONCLUIR </button>
             </section>           
         </div>
     </main>
     <footer>
         <div class="left">
             <h1>Be Candy Doceria LTDA</h1>
-            <p>Rua tal, Bairro tal, Nº 00, Garanhuns-PE</P>
+            <p>Rua tal, Bairro tal, Nº 00, Garanhuns-PE</p>
         </div>
         <nav class="right">
             <ul>
@@ -169,6 +137,6 @@
             </ul>
         </nav>
     </footer>
+    <script src="../js/carrinho.js"></script>
 </body>
-
 </html>

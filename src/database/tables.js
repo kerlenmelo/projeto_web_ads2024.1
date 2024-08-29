@@ -1,8 +1,14 @@
 import { dbPromise } from "./db.js";
 
-async function criarTabelas() {
-    const db = await dbPromise
+async function resetDatabase() {
+    const db = await dbPromise;
 
+    // Exclui todas as tabelas existentes
+    await db.run(`DROP TABLE IF EXISTS kit_produtos`);
+    await db.run(`DROP TABLE IF EXISTS kits`);
+    await db.run(`DROP TABLE IF EXISTS produtos`);
+
+    // Cria as tabelas novamente
     await db.run(`CREATE TABLE IF NOT EXISTS produtos
         (
             id TEXT PRIMARY KEY,
@@ -30,6 +36,8 @@ async function criarTabelas() {
             PRIMARY KEY (kit_id, produto_id)
         )
     `);
+
+    console.log('Banco de dados resetado e tabelas recriadas com sucesso.');
 }
 
-criarTabelas();
+resetDatabase();
