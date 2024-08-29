@@ -40,29 +40,16 @@
             </nav>
         </div>
     </header>
+    <h1 class="title-principal">CARRINHO</h1>
     <main>
-        <h1 class="title-principal">CARRINHO</h1>
-        <div class="container-main">
-            <section class="descricao">
-                <h2 class="title">DESCRIÇÃO DA COMPRA</h2>
+            <section class="descricao"> 
+                <h2 class="title">DESCRIÇÃO DA COMPRA</h2>               
                 <div class="item-carrinho-container">
-                    <div class="item-carrinho">
-                        <div class="imagem-item">
-                            <img src="../img/produto_exemplo.jpg" alt="Produto Exemplo">
-                        </div>
-                        <div class="informacao-item">
-                            <p class="titulo-item">Produto Exemplo</p>
-                            <p class="preco">R$ 29,99</p>
-                            <p class="descricao-item">Descrição do produto.</p>
-                            <button class="btn-diminuir">-</button>
-                            <button class="btn-aumentar">+</button>
-                            <button class="btn-remover">Remover</button>
-                        </div>
-                    </div>
+                    <!-- Itens do carrinho serão adicionados aqui pelo JavaScript -->
                 </div>
                 <div class="item-total">
-                    <h3 class="titulo-total">TOTAL: </h3>
-                    <p class="preco-total">R$ 0,00</p>
+                    <!-- <h3 class="titulo-total">TOTAL: </h3>
+                    <p class="preco-total">R$ 0,00</p> -->
                 </div>
             </section>
             <section class="entrega">
@@ -70,25 +57,25 @@
                 <div class="col-container">
                     <div class="item-entrega">
                         <h3 class="titulo-item-ent">ENDEREÇO</h3>
-                        <p class="descricao-entrega">Rua: </p>
-                        <input class="input-entrega" type="text">
-                        <p class="descricao-entrega">Número: </p>
-                        <input class="input-entrega" type="text">
-                        <p class="descricao-entrega">Bairro: </p>
-                        <input class="input-entrega" type="text">
-                        <p class="descricao-entrega">Complemento: </p>
-                        <input class="input-entrega" type="text">
+                        <label for="rua" class = 'info-input'>Rua:</label>
+                        <input id="rua" class="input-entrega" type="text">
+                        <label for="numero" class = 'info-input'>Número:</label>
+                        <input id="numero" class="input-entrega" type="text">
+                        <label for="bairro" class = 'info-input'>Bairro:</label>
+                        <input id="bairro" class="input-entrega" type="text">
+                        <label for="complemento" class = 'info-input'>Complemento:</label>
+                        <input id="complemento" class="input-entrega" type="text">
                     </div>
                     <div class="item-entrega">
                         <h3 class="titulo-item-ent">DADOS PESSOAIS</h3>
-                        <p class="descricao-entrega">Nome:</p>
-                        <input class="input-entrega" type="text">
-                        <p class="descricao-entrega">CPF:</p>
-                        <input class="input-entrega" type="text">
-                        <p class="descricao-entrega">E-mail:</p>
-                        <input class="input-entrega" type="text">
-                        <p class="descricao-entrega">Telefone:</p>
-                        <input class="input-entrega" type="text">
+                        <label for="nome" class = 'info-input'>Nome:</label>
+                        <input id="nome" class="input-entrega" type="text">
+                        <label for="cpf" class = 'info-input'>CPF:</label>
+                        <input id="cpf" class="input-entrega" type="text">
+                        <label for="email" class = 'info-input'>E-mail:</label>
+                        <input id="email" class="input-entrega" type="text">
+                        <label for="telefone" class = 'info-input'>Telefone:</label>
+                        <input id="telefone" class="input-entrega" type="text">
                     </div>
                     <button name="Enviar" type="button" class="botao">CONFIRMAR</button>
                 </div>
@@ -97,12 +84,13 @@
                 <h2 class="title">CUPONS E VALE-COMPRAS</h2>
                 <div class="item-cupom">
                     <p>INSIRA SEU CUPOM OU VALE-PRESENTE</p>
-                    <input class='input-entrega' type="text">
+                    <input class="input-cupom" type="text">
+                    <button id="aplicar-desconto" class="botao">Aplicar Desconto</button>
                 </div>
-                <h2 class='title'>PAGAMENTO</h2>
-                <div class='opcoes-pagamento'>
+                <h2 class="title">PAGAMENTO</h2>
+                <div class="opcoes-pagamento">
                     <label class="label-pagamento" for="forma-pagamento">Forma de pagamento:</label>
-                    <select class='lista-op-pag' name="forma-pagamento">
+                    <select id="forma-pagamento" class="lista-op-pag" name="forma-pagamento">
                         <option value="1">Cartão de Crédito</option>
                         <option value="2">Cartão de Débito</option>
                         <option value="3">Pix</option>
@@ -112,21 +100,21 @@
                 <div class="pagamento">
                     <div class="item-pagamento">
                         <h3 class="titulo-pagamento">TAXA DE ENTREGA:</h3>
-                        <p class="valor-pagamento">+ R$ 00,00</p>
+                        <p id="taxa-entrega" class="valor-pagamento">+ R$ 10,00</p>
                         <h3 class="titulo-pagamento">CUPOM:</h3>
-                        <p class="valor-pagamento">- R$ 00,00</p>
+                        <p id="desconto" class="valor-pagamento">- R$ 0,00</p>
                         <h3 class="titulo-pagamento">SUBTOTAL:</h3>
-                        <p class="valor-pagamento">= R$ 00,00</p>
+                        <p id="subtotal" class="valor-pagamento">= R$ 0,00</p>
                     </div>
                     <div class="item-pagamento-total">
                         <h3 class="titulo-total">TOTAL:</h3>
-                        <p class="preco-total">R$ 00,00</p>
+                        <p id="total" class="preco-total">R$ 10,00</p>
                     </div>
                 </div>
                 <button name="Concluir" type="button" class="botao">CONCLUIR</button>
                 <button id="clear-cart" class="botao">Esvaziar Carrinho</button>
             </section>
-        </div>
+
     </main>
     <footer>
         <div class="left">

@@ -75,7 +75,7 @@ header {
 
 @media screen and (max-width: 768px) {
     header {
-        padding: 0px 1.042vw 0.52vw 1.042vw;
+       flex-direction: column;
     }
 
     .left-nav,
