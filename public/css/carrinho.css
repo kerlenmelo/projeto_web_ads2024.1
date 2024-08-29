@@ -1,4 +1,4 @@
-
+/* Reseta o box-sizing, margin e padding */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,28 +6,21 @@
 }
 
 /* CARRINHO */
-
-@media screen and (min-width: 400px) and (max-width: 1920px) {
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    main {
-        background-color: #fff6ff;
-    }
-
-    main h1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-size: 6vw; 
-    }
+main {
+    background-color: #fff6ff;
 }
-.title-principal{
-    font-family: 'Rubik';
+
+main h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 6vw; 
+}
+
+/* Títulos principais e containers */
+.title-principal {
+    font-family: 'Rubik', sans-serif;
     font-size: 4.6vw;
     color: #FF66C4;
 }
@@ -38,7 +31,6 @@
     margin: 2.5vw auto;
     display: flex;
     justify-content: center;
-
     gap: 5vw;
 }
 
@@ -46,10 +38,11 @@
     text-align: center;
 }
 
+/* Itens do carrinho */
 .item-carrinho {
     display: flex;
     align-items: center;
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
     background-color: #F1D1E0;
     width: 30vw; 
     height: 11vw; 
@@ -60,7 +53,7 @@
 
 .title {
     color: #FF66C4;
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
     text-align: center;
     font-size: 2.2vw;
 }
@@ -93,7 +86,7 @@
 
 .descricao-item {
     color: #0CC0DF;
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
     font-size: 1.3833vw;
 }
 
@@ -112,14 +105,13 @@
     padding-right: 1.9625vw;
 }
 
-
 .item-entrega {
     width: 19.375vw; 
     height: 18.5vw; 
     background-color: #F1D1E0;
     margin: 2.5vw 1.171vw 1.562vw 1.171vw; 
     border-radius: 1.5625vw; 
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
     display: flex;
     flex-direction: column;
     line-height: 1.95vw; 
@@ -137,7 +129,7 @@
     width: 13.3333vw; 
     height: 1.875vw;
     padding-left: 0.8vw;
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
     border-radius: 1.25vw; 
     border-color: #F1D1E0;
 }
@@ -147,33 +139,35 @@
     font-size: 1.71875vw; 
 }
 
+/* Botões */
 .botao {
     background-color: #ff66c4;
     width: 10.9375vw; 
     height: 2.5vw; 
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
     font-weight: bold;
     margin-top: 1.0417vw; 
     margin-bottom: 1.0417vw; 
-    border-color:#0CC0DF ;
+    border-color: #0CC0DF;
     border-radius: 0.833vw; 
     color: white;
     font-size: 1.0417vw;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .botao:hover {
     background-color: #0cc0df;
     border: none;
-    border-radius: 0.833vw;
     color: black;
 }
 
+/* Pagamento */
 .section-pagamento {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
 }
 
 .item-cupom {
@@ -194,11 +188,10 @@
     background-color: #F1D1E0;
 }
 
-.item-pagamento {
+.item-pagamento, .item-pagamento-total {
     display: flex;
     flex-direction: column;
     width: 13.28125vw;
-    height: 13.375vw;
     background-color: #F1D1E0;
     border-radius: 1.5625vw;
     line-height: 1.953125vw;
@@ -207,17 +200,9 @@
 }
 
 .item-pagamento-total {
-    display: flex;
-    flex-direction: column;
     margin-top: 3.6458vw;
     margin-bottom: 3.6458vw;
-    width: 13.28125vw;
     height: 4.6354vw;
-    background-color: #F1D1E0;
-    border-radius: 1.5625vw;
-    padding-left: 0.9375vw;
-    padding-top: 0.4167vw;
-    line-height: 1.953125vw;
 }
 
 .titulo-pagamento {
@@ -243,18 +228,19 @@
     font-size: 1.55vw;
 }
 
+/* Opções de pagamento */
 .opcoes-pagamento {
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
     display: flex;
     flex-direction: column;
 }
 
 .label-pagamento {
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
     font-weight: bolder;
     text-transform: uppercase;
     color: #FF14A4;
-    margin: 0.4167vw 0vw 0.4167vw 0vw;
+    margin: 0.4167vw 0vw;
 }
 
 .lista-op-pag {
@@ -262,7 +248,7 @@
     height: 2vw;
     border-radius: 1.5625vw;
     color: black;
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
     font-size: 0.829vw;
     font-weight: bolder;
     text-align: center;
@@ -270,8 +256,7 @@
     background-color: #FF14A4;
 }
 
-/* Media Queries */
-
+/* Media Queries para ajuste em telas menores */
 @media screen and (max-width: 768px) {
     .container-kit {
         width: 90%; 
@@ -281,10 +266,7 @@
         width: 15vw; 
         height: 3.125vw; 
     }
-}
-/* Adicione esses ajustes ao final do seu CSS */
 
-@media screen and (max-width: 768px) {
     .item-carrinho {
         flex-direction: column;
         width: 90%;
@@ -330,4 +312,77 @@
         height: auto;
         margin-bottom: 2vw;
     }
+}
+
+/* Ajuste geral dos botões */
+.botao, .btn-aumentar, .btn-diminuir, .btn-remover {
+    background-color: #ff66c4;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    border-color: #0CC0DF;
+    border-radius: 0.5vw; /* Reduzido para combinar com o botão remover */
+    color: white;
+    font-size: 0.9vw; /* Reduzido para os botões específicos */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover para os botões */
+.botao:hover, .btn-aumentar:hover, .btn-diminuir:hover, .btn-remover:hover {
+    background-color: #0cc0df;
+    color: black;
+}
+
+/* Botões específicos de quantidade e remover item */
+.btn-aumentar, .btn-diminuir {
+    width: 2vw; /* Reduzido para caber melhor */
+    height: 2vw; /* Reduzido para caber melhor */
+    margin: 0 0.5vw;
+    font-size: 0.8vw; /* Ajustado para corresponder ao tamanho menor */
+}
+
+.btn-remover {
+    background-color: #FF14A4;
+    color: white;
+    border-radius: 0.5vw;
+    padding: 0.4vw 0.8vw; /* Ajustado para menor padding */
+    font-size: 0.8vw; /* Ajustado para corresponder ao tamanho menor */
+    margin-left: 0.5vw; /* Reduzido para alinhamento melhor */
+}
+
+.btn-remover:hover {
+    background-color: #0cc0df;
+    color: black;
+}
+
+/* Botão de esvaziar carrinho */
+#clear-cart {
+    background-color: #ff66c4;
+    color: white;
+    border: none;
+    border-radius: 0.833vw;
+    padding: 0.8vw 1.5vw; 
+    font-size: 1vw; 
+    cursor: pointer;
+    margin-top: 2vw;
+    text-align: center; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+#clear-cart:hover {
+    background-color: #0cc0df;
+    color: black;
+}
+
+.carrinho-vazio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 6vw; 
+    font-family: 'Rubik', sans-serif;
+    font-size: 4.6vw;
+    color: #FF66C4;
 }

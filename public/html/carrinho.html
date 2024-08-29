@@ -42,29 +42,31 @@
     </header>
     <main>
         <h1 class="title-principal">CARRINHO</h1>
-        <div class="container-main">            
-            <section class="descricao"> 
-                <h2 class="title">DESCRIÇÃO COMPRA </h2>       
-                <!-- A lista de itens será gerada pelo JavaScript -->
-                <div class="item-carrinho-template d-none">
-                    <div class="imagem-item">
-                        <img src="" alt="">
-                    </div>
-                    <div class="informacao-item">
-                        <h3 class="titulo-item"></h3>
-                        <p class="descricao-item">Peso: </p>
-                        <p class="descricao-item">Quantidade: </p>
-                        <p class="preco"></p>
+        <div class="container-main">
+            <section class="descricao">
+                <h2 class="title">DESCRIÇÃO DA COMPRA</h2>
+                <div class="item-carrinho-container">
+                    <div class="item-carrinho">
+                        <div class="imagem-item">
+                            <img src="../img/produto_exemplo.jpg" alt="Produto Exemplo">
+                        </div>
+                        <div class="informacao-item">
+                            <p class="titulo-item">Produto Exemplo</p>
+                            <p class="preco">R$ 29,99</p>
+                            <p class="descricao-item">Descrição do produto.</p>
+                            <button class="btn-diminuir">-</button>
+                            <button class="btn-aumentar">+</button>
+                            <button class="btn-remover">Remover</button>
+                        </div>
                     </div>
                 </div>
-                <div class="item-carrinho-container"></div>
                 <div class="item-total">
                     <h3 class="titulo-total">TOTAL: </h3>
                     <p class="preco-total">R$ 0,00</p>
                 </div>
             </section>
             <section class="entrega">
-                <h2 class="title">INFORMAÇÕES DE ENTREGA </h2>
+                <h2 class="title">INFORMAÇÕES DE ENTREGA</h2>
                 <div class="col-container">
                     <div class="item-entrega">
                         <h3 class="titulo-item-ent">ENDEREÇO</h3>
@@ -78,8 +80,8 @@
                         <input class="input-entrega" type="text">
                     </div>
                     <div class="item-entrega">
-                        <h3 class="titulo-item-ent">DADOS PESSOAIS </h3>
-                        <p class="descricao-entrega"> Nome:</p>
+                        <h3 class="titulo-item-ent">DADOS PESSOAIS</h3>
+                        <p class="descricao-entrega">Nome:</p>
                         <input class="input-entrega" type="text">
                         <p class="descricao-entrega">CPF:</p>
                         <input class="input-entrega" type="text">
@@ -88,20 +90,20 @@
                         <p class="descricao-entrega">Telefone:</p>
                         <input class="input-entrega" type="text">
                     </div>
-                    <button name="Enviar" type="text" class="botao"> CONFIRMAR </button>
+                    <button name="Enviar" type="button" class="botao">CONFIRMAR</button>
                 </div>
             </section>
             <section class="section-pagamento">
-                <h2 class="title">CUPONS E VALE-COMPRAS </h2>
-                <div class="item-cupom">   
-                    <p>INSIRA SEU CUPOM OU VALE-PRESENTES </p>
+                <h2 class="title">CUPONS E VALE-COMPRAS</h2>
+                <div class="item-cupom">
+                    <p>INSIRA SEU CUPOM OU VALE-PRESENTE</p>
                     <input class='input-entrega' type="text">
                 </div>
-                <h2 class='title'> PAGAMENTO</h2>
+                <h2 class='title'>PAGAMENTO</h2>
                 <div class='opcoes-pagamento'>
-                    <label class="label-pagamento" for="forma-pagamento">Forma de pagamento: </label>
+                    <label class="label-pagamento" for="forma-pagamento">Forma de pagamento:</label>
                     <select class='lista-op-pag' name="forma-pagamento">
-                        <option value="1">Cartão de Crédito </option>
+                        <option value="1">Cartão de Crédito</option>
                         <option value="2">Cartão de Débito</option>
                         <option value="3">Pix</option>
                         <option value="4">Boleto</option>
@@ -109,20 +111,21 @@
                 </div>
                 <div class="pagamento">
                     <div class="item-pagamento">
-                        <h3 class="titulo-pagamento">TAXA DE ENTREGA: </h3>
-                        <p class="valor-pagamento">+ R$ 10,00</p>
-                        <h3 class="titulo-pagamento">CUPOM: </h3>
-                        <p class="valor-pagamento">- R$ 15,00</p>
-                        <h3 class="titulo-pagamento">SUBTOTAL: </h3>
-                        <p class="valor-pagamento">= R$ 83,97</p>
+                        <h3 class="titulo-pagamento">TAXA DE ENTREGA:</h3>
+                        <p class="valor-pagamento">+ R$ 00,00</p>
+                        <h3 class="titulo-pagamento">CUPOM:</h3>
+                        <p class="valor-pagamento">- R$ 00,00</p>
+                        <h3 class="titulo-pagamento">SUBTOTAL:</h3>
+                        <p class="valor-pagamento">= R$ 00,00</p>
                     </div>
                     <div class="item-pagamento-total">
-                        <h3 class="titulo-total">TOTAL: </h3>
-                        <p class="preco-total">R$ 68,97</p>
+                        <h3 class="titulo-total">TOTAL:</h3>
+                        <p class="preco-total">R$ 00,00</p>
                     </div>
                 </div>
-                <button name="Concluir" type="text" class="botao"> CONCLUIR </button>
-            </section>           
+                <button name="Concluir" type="button" class="botao">CONCLUIR</button>
+                <button id="clear-cart" class="botao">Esvaziar Carrinho</button>
+            </section>
         </div>
     </main>
     <footer>

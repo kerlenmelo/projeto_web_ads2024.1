@@ -7,7 +7,7 @@ async function getAllProducts() {
             throw new Error('Erro ao buscar os produtos');
         }
         const data = await response.json();
-        return data;  // Agora retorna diretamente o array de produtos
+        return data;
     } catch (error) {
         console.error("Erro ao obter os produtos:", error);
         return [];
@@ -24,7 +24,7 @@ async function addToCart(productId) {
     }
 
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
-    
+
     // Verifica se o produto já está no carrinho
     const existingProductIndex = cart.findIndex(item => item.id === productId);
 
@@ -65,10 +65,7 @@ async function renderProducts() {
         document.querySelectorAll('.btn-add-to-cart').forEach(button => {
             button.addEventListener('click', () => {
                 const productId = button.getAttribute('data-id');
-                const product = products.find(p => p.id == productId);
-                if (product) {
-                    addToCart(product);
-                }
+                addToCart(productId);
             });
         });
     } catch (error) {
