@@ -69,12 +69,12 @@ function updateCarrossel() {
     carrosselContainer.style.transform = `translateX(${newPosition}%)`;
 
     carrosselContainer.addEventListener('transitionend', function handleTransitionEnd() {
-        if (currentIndex >= totalItems) {
+        if (currentIndex >= produtos.length) {
             currentIndex = 0;
             carrosselContainer.style.transition = 'none';
             carrosselContainer.style.transform = `translateX(0%)`;
         } else if (currentIndex < 0) {
-            currentIndex = totalItems - itemsPerPage;
+            currentIndex = produtos.length - itemsPerPage;
             carrosselContainer.style.transition = 'none';
             carrosselContainer.style.transform = `translateX(${-currentIndex * (100 / itemsPerPage)}%)`;
         }
