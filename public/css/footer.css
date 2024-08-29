@@ -1,3 +1,4 @@
+/* Reset básico */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,29 +6,24 @@
 }
 
 /* FOOTER */
-
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.042vw;
+    padding: 1rem;
     background-color: #ffaddc;
-
-    border: 0.104vw solid #ff66c4;
-
-    bottom: 0;
-    left: 0;
-    right: 0;
+    border: 1px solid #ff66c4;
     width: 100%;
-    height: 5.052vw; 
-
+    height: auto;
     font-family: "Rubik", sans-serif;
     font-style: normal;
-    font-size: 0.8333vw;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0;
 }
 
 footer h1 {
-    font-size: 0.8333vw;
+    font-size: 1rem;
 }
 
 .left {
@@ -35,7 +31,7 @@ footer h1 {
 }
 
 .right {
-    margin: 0px 2.083vw; 
+    margin: 0 1.5rem;
 }
 
 .right ul {
@@ -46,25 +42,67 @@ footer h1 {
 
 .right ul li {
     display: inline;
-    margin-right: 0.521vw;
+    margin-right: 1rem;
 }
 
 .right ul li a {
     color: #0cc0df;
+    text-decoration: none;
 }
 
 .space-holder {
-    height: 5.208vw; 
+    height: 5rem;
 }
 
 /* Media Queries */
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     footer {
-        padding: 1.042vw;
+        padding: 1rem;
+        font-size: 0.875rem;
     }
 
     .right {
-        margin: 0px 1.042vw; 
+        margin: 0 1rem;
+    }
+
+    .right ul li {
+        margin-right: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        font-size: 0.75rem;
+    }
+
+    .right {
+        margin: 1rem 0;
+    }
+
+    .right ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    .space-holder {
+        height: 3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        font-size: 0.6875rem;
+        padding: 0.75rem;
+    }
+
+    .right ul li {
+        margin-bottom: 0.25rem;
     }
 }

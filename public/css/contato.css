@@ -4,14 +4,6 @@
     padding: 0;
 }
 
-/* CONTATO */
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 /* HEADER */
 
 header {
@@ -20,7 +12,7 @@ header {
 
 /* MAIN */
 
-main {
+body, main {
     background-color: #fff6ff;
 }
 
