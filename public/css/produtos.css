@@ -1,184 +1,97 @@
-/* Reset básico */
+/* Resetando box-sizing, margin e padding */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Estilização do body e html */
-html, body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #fff6ff;
-    color: #333;
-}
-
-/* Header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1vw;
-    background-color: #fff;
-    border-bottom: 2px solid #FF66C4;
-}
-
-.left-image-decoration img,
-.right-image-decoration img {
-    width: 100%;
-    height: auto;
-}
-
-.nav-bar {
-    display: flex;
-}
-
-.left-nav,
-.right-nav {
-    display: flex;
-    list-style-type: none;
-}
-
-.left-menu-link,
-.right-menu-link {
-    margin: 0 1vw;
-}
-
-.left-menu-link a,
-.right-menu-link a {
-    text-decoration: none;
-    color: #FF66C4;
-    font-weight: bold;
-    font-size: 1.2vw;
-}
-
-.left-menu-link.active a,
-.right-menu-link a:hover {
-    color: #0CC0DF;
-}
-
-/* Main */
+/* Ajustes específicos para a página de produtos */
 main {
-    padding: 2vw;
+    background-color: #fff6ff;
 }
 
+/* Container principal para os produtos */
 .container-principal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2vw;
+    display: flex; /* Utilizando flexbox para disposição horizontal */
+    flex-wrap: wrap; /* Permite que os produtos se movam para a linha seguinte se necessário */
+    gap: 2vw; /* Espaçamento entre os produtos */
+    justify-content: center; /* Centraliza os produtos no container */
+    padding: 2vw; /* Padding ao redor do container */
 }
 
+/* Card de produto */
 .card-produto {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #F1D1E0;
-    width: 80%;
-    max-width: 1200px;
-    padding: 2vw;
     border-radius: 1vw;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1vw;
+    width: 20vw; /* Largura do card */
+    min-width: 200px; /* Largura mínima do card */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    transition: transform 0.2s; /* Transição suave para o efeito hover */
+    text-align: center; /* Alinha o texto ao centro do card */
+}
+
+.card-produto:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do card ao passar o mouse */
 }
 
 .card-produto img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 1vw;
+    width: 100%; /* Ajusta a imagem para ocupar toda a largura do card */
+    height: 15vw; /* Define uma altura fixa para a imagem */
+    object-fit: cover; /* Cobre a área do card mantendo a proporção */
+    border-radius: 0.5vw; /* Arredonda as bordas da imagem */
+    margin-bottom: 1vw; /* Espaço abaixo da imagem */
 }
 
 .card-produto h3 {
-    font-family: 'Rubik', sans-serif;
-    color: #FF66C4;
-    font-size: 2vw;
-    margin: 1vw 0;
+    font-family: 'Rubik';
+    font-size: 1.5rem; /* Tamanho do título */
+    margin: 0.5vw 0; /* Margem acima e abaixo do título */
+    color: #000;
 }
 
 .card-produto p {
-    font-family: 'Rubik', sans-serif;
-    color: #333;
-    font-size: 1.5vw;
-    text-align: center;
+    font-family: 'Rubik';
+    font-size: 1rem; /* Tamanho da descrição */
+    color: #0CC0DF;
+    margin: 0.5vw 0; /* Margem acima e abaixo da descrição */
 }
 
 .card-produto span {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik';
+    font-size: 1.25rem; /* Tamanho do preço */
     color: #FF66C4;
-    font-size: 1.8vw;
     font-weight: bold;
 }
 
-/* Footer */
-footer {
+@media screen and (max-width: 768px) {
+    .card-produto {
+        width: 90%; /* Ajusta a largura do card para telas menores */
+    }
+
+    .card-produto img {
+        height: 20vw; /* Ajusta a altura da imagem para telas menores */
+    }
+}
+
+/* Botão de adicionar ao carrinho */
+.card-produto .btn-add-to-cart {
     background-color: #FF66C4;
     color: white;
-    padding: 2vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    border: none;
+    border-radius: 0.5vw;
+    padding: 0.5vw 1vw;
+    font-family: 'Rubik';
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1vw;
+    transition: background-color 0.3s;
 }
 
-.left h1 {
-    font-family: 'Rubik', sans-serif;
-    font-size: 2vw;
-}
-
-.left p {
-    font-family: 'Rubik', sans-serif;
-    font-size: 1.2vw;
-}
-
-.right ul {
-    list-style-type: none;
-    display: flex;
-    gap: 1vw;
-}
-
-.right a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Rubik', sans-serif;
-    font-size: 1.2vw;
-}
-
-.right a:hover {
-    color: #0CC0DF;
-}
-
-/* Media Queries */
-@media screen and (max-width: 768px) {
-    .container-principal {
-        padding: 1vw;
-    }
-
-    .card-produto {
-        width: 100%;
-        padding: 1vw;
-    }
-
-    .card-produto h3 {
-        font-size: 4vw;
-    }
-
-    .card-produto p {
-        font-size: 2.5vw;
-    }
-
-    .card-produto span {
-        font-size: 3vw;
-    }
-
-    .nav-bar {
-        flex-direction: column;
-    }
-
-    .left-nav,
-    .right-nav {
-        flex-direction: column;
-    }
-
-    .left-menu-link,
-    .right-menu-link {
-        margin: 0.5vw 0;
-    }
+.card-produto .btn-add-to-cart:hover {
+    background-color: #0CC0DF;
 }
