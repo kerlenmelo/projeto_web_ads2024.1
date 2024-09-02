@@ -1,142 +1,100 @@
+/* Resetando box-sizing, margin e padding */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* KITS */
-
-main > h1 {
-    color: #ff66c4;
-    font-family: "Rubik", sans-serif;
-    font-size: 3.125vw;
-    font-weight: bold;
-    text-transform: uppercase;
-
-    display: flex;
-    justify-content: center;
+/* Ajustes específicos para a página de kits */
+main {
+    background-color: #fff6ff;
+    font-family: 'Rubik';
+    color: #FF66C4;
+    text-align: center;
 }
 
-main section {
-    display: flex;
-    justify-content: center;
-    align-content: space-between;
+/* Container principal para os kits */
+.container-kits {
+    display: flex; /* Utilizando flexbox para disposição horizontal */
+    flex-wrap: wrap; /* Permite que os kits se movam para a linha seguinte se necessário */
+    gap: 2vw; /* Espaçamento entre os kits */
+    justify-content: center; /* Centraliza os kits no container */
+    padding: 2vw; /* Padding ao redor do container */
 }
 
-.container-main {
+/* Card de kit */
+.card-kit {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #F1D1E0;
+    border-radius: 1vw;
+    padding: 1vw;
+    width: 20vw; /* Largura do card */
+    min-width: 200px; /* Largura mínima do card */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    transition: transform 0.2s; /* Transição suave para o efeito hover */
+    text-align: center; /* Alinha o texto ao centro do card */
 }
 
-.container-kit {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    width: 26.667vw; 
-    height: 29.167vw;
-
-    border: 0.052vw solid #ff14a4;
-    border-radius: 3.75vw;
-
-    margin: 1.042vw 2.083vw 2.083vw 1.042vw;
-
-    background-color: #0cc0df;
+.card-kit:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do card ao passar o mouse */
 }
 
-.image-kits {
-    width: 18.333vw; 
-    height: 12.5vw;
-
-    border-radius: 1.042vw;
-
-    margin: 1.042vw 0.416vw 1.562vw 0.416vw;
+.card-kit img {
+    width: 100%; /* Ajusta a imagem para ocupar toda a largura do card */
+    height: 15vw; /* Define uma altura fixa para a imagem */
+    object-fit: cover; /* Cobre a área do card mantendo a proporção */
+    border-radius: 0.5vw; /* Arredonda as bordas da imagem */
+    margin-bottom: 1vw; /* Espaço abaixo da imagem */
 }
 
-.price-kit {
-    font-size: 0.729vw;
-    font-family: "Montserrat", sans-serif;
+.card-kit h3 {
+    font-family: 'Rubik';
+    font-size: 1.5rem; /* Tamanho do título */
+    margin: 0.5vw 0; /* Margem acima e abaixo do título */
+    color: #000;
+}
+
+.card-kit p {
+    font-family: 'Rubik';
+    font-size: 1rem; /* Tamanho da descrição */
+    color: #0CC0DF;
+    margin: 0.5vw 0; /* Margem acima e abaixo da descrição */
+}
+
+.card-kit span {
+    font-family: 'Rubik';
+    font-size: 1.25rem; /* Tamanho do preço */
+    color: #FF66C4;
     font-weight: bold;
-
-    color: black;
 }
-
-.name-kit {
-    font-family: "Rubik", sans-serif;
-    font-size: 0.8333vw; 
-    font-weight: bold;
-
-    color: #ff14a4 ;
-
-    margin-bottom: 1.042vw;
-}
-
-.container-kit > p {
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.625vw;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-
-    color: black;
-}
-
-.description-kit {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.625vw;
-    text-transform: uppercase;
-    text-align: center;
-
-    color: black;
-
-    margin-top: 0.521vw;
-}
-
-.description-kit li {
-    line-height: 1.8;
-}
-
-.container-main button {
-    background-color: #ff66c4;
-
-    width: 10.9375vw;
-    height: 2.5vw;
-
-    margin-bottom: 2.083vw;
-
-    border: 0.104vw solid #0cc0df;
-    border-radius: 3.75vw;
-
-    color: #fff;
-    font-size: 0.729vw;
-    font-family: "Rubik", sans-serif;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-
-    cursor: pointer;
-}
-
-.container-main button:hover {
-    background-color: #0cc0df;
-    color: black;
-    border: 0.104vw solid #ff66c4;
-}
-
-/* Media Queries */
 
 @media screen and (max-width: 768px) {
-    .container-kit {
-        width: 90%;
+    .card-kit {
+        width: 90%; /* Ajusta a largura do card para telas menores */
     }
 
-    .container-main button {
-        width: 15vw;
-        height: 3.125vw;
+    .card-kit img {
+        height: 20vw; /* Ajusta a altura da imagem para telas menores */
     }
+}
+
+/* Botão de adicionar ao carrinho */
+.card-kit .btn-add-to-cart {
+    background-color: #FF66C4;
+    color: white;
+    border: none;
+    border-radius: 0.5vw;
+    padding: 0.5vw 1vw;
+    font-family: 'Rubik';
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1vw;
+    transition: background-color 0.3s;
+}
+
+.card-kit .btn-add-to-cart:hover {
+    background-color: #0CC0DF;
 }
